@@ -122,7 +122,7 @@ gulp.task('scripts', function () {
 gulp.task('html', function () {
     var assets = $.useref.assets({searchPath: '{.tmp,app}'});
 
-    return gulp.src('app/**/**/*.html')
+    return gulp.src(['app/**/**/*.html','express/views/**/*.html'])
         .pipe(assets)
         // Remove any unused CSS
         // Note: If not using the Style Guide, you can delete it from
@@ -164,11 +164,11 @@ gulp.task('serve', ['styles'], function () {
         // Note: this uses an unsigned certificate which on first access
         //       will present a certificate warning in the browser.
         // https: true,
-        middleware: [require('./express')],
+        middleware: [require('./'+packageJson.main)],
         server: ['.tmp', 'app']
     });
 
-    gulp.watch(['app/**/*.html'], reload);
+    gulp.watch(['app/**/*.html','express/views/**/*.html'], reload);
     gulp.watch(['app/styles/**/*.{scss,css}'], ['styles', reload]);
     gulp.watch(['app/scripts/**/*.js'], ['jshint']);
     gulp.watch(['app/images/**/*'], reload);
