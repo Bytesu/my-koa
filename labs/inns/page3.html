@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <style>
+        *{
+            padding: 0;margin: 0;box-sizing: border-box;overflow: hidden;
+        }
+        body{
+            font-family:  Helvetica,"STHeiti STXihei","Microsoft JhengHei","Microsoft YaHei",Tohoma,Arial;
+            font-size: 16px;
+            background: #fffbf5;
+            color: rgb(51, 51, 51);;
+        }
+        .ctner{max-width: 562px;margin: 0 auto;}
+        .hide{display: none;}
+
+        div{
+            -webkit-tap-highlight-color:rgba(0,0,0,0);
+        }
+    </style>
+    <script src="./scripts/utils.js"></script>
+    <title>通话界面</title>
+</head>
+<body >
+<div class="ctner">
+    <script>
+        var imgPath = getSingle().isAndroid()?'android-':'';
+        var path = window.location.search.replace('?num=','');
+        window.document.write('<img title="'+path+'"  src="./imgs/'+imgPath+'desk.jpg" style="width:100%;"> ');
+    </script>
+    <audio controls="controls"   class="hide" >
+        <source src="./sound/ring.ogg"/>
+    </audio>
+</div>
+<script>
+    (function(){
+        var querySelector = document.querySelector.bind(document);
+        document.addEventListener('DOMContentLoaded', {
+            handleEvent: function () {
+                querySelector('img').style.width = window.innerWidth+'px';
+                querySelector('img').style.height = window.innerHeight+'px';
+                setTimer();
+            }
+        }, false);
+        function setTimer() {
+            setTimeout(function () {
+                //querySelector('audio').play();
+                var img = querySelector('img');
+                img.src = './imgs/iphones7.jpg';
+                img.addEventListener('click',function(){
+                    window.location.href = "./page4.html?num=" + img.attributes.title.value
+                },false);
+
+            }, 1000);
+        }
+    })();
+</script>
+</body>
+</html>

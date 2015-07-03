@@ -1,0 +1,28 @@
+{
+  "ret": true,
+  "msg": "success",
+  "data": [
+    {
+      "id": "57",
+      "title": "fdfdfddf",
+      "cover_id": "8",
+      "min_price": "1",
+      "max_price": "1",
+      "description": "",
+      "show_time": "1432879920",
+      "show_status": "2",
+      "pic_url": "/Uploads/Picture/2015-05-08/554c53bb7bf96.jpg"
+    },
+    {
+      "id": "57",
+      "title": "fdfdfddf",
+      "cover_id": "8",
+      "min_price": "1",
+      "max_price": "1",
+      "description": "",
+      "show_time": "1432879920",
+      "show_status": "2",
+      "pic_url": "/Uploads/Picture/2015-05-08/554c53bb7bf96.jpg"
+    }
+  ]
+}

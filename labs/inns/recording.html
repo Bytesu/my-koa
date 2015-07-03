@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <style>
+        *{
+            padding: 0;margin: 0;box-sizing: border-box;overflow: hidden;
+        }
+        body{
+            font-family:  Helvetica,"STHeiti STXihei","Microsoft JhengHei","Microsoft YaHei",Tohoma,Arial;
+            font-size: 16px;
+            background: #fffbf5;
+            color: rgb(51, 51, 51);;
+        }
+        .ctner{max-width: 562px;margin: 0 auto;}
+        .hide{display: none;}
+
+        div{
+            -webkit-tap-highlight-color:rgba(0,0,0,0);
+        }
+    </style>    <script src="./scripts/utils.js"></script>
+    <title>通话界面</title>
+</head>
+<body style="background: #0A0A0A">
+<div class="ctner">
+    <script>
+        var imgPath = getSingle().isAndroid()?'android-record':'recording';
+        var path = window.location.search.replace('?num=', '');
+        window.document.write('<img title="' + path + '"  src="./imgs/'+imgPath + path + '.jpg" style="width:100%;"> ');
+    </script>
+</div>
+<!--通话录音-->
+<audio controls="controls"  class="hide">
+    <source src="./sound/iphone.ogg"/>
+    <source src="./sound/iphone.mp3"/>
+</audio>
+<script>
+    (function () {
+        var querySelector = document.querySelector.bind(document);
+        document.addEventListener('DOMContentLoaded', {
+            handleEvent: function () {
+                setTimer();
+                click();
+            }
+        }, false);
+        function click() {
+            var div_ = document.createElement('div');
+            var style = {
+                width: window.innerWidth + 'px',
+                height: '250px',
+                position: 'absolute',
+                bottom: '0'
+            };
+            div_.style.width = style.width;
+            div_.style.height = style.height;
+            div_.style.position = style.position;
+            div_.style.bottom = style.bottom;
+            querySelector('img').style.width = window.innerWidth+'px';
+            querySelector('img').style.height = window.innerHeight+'px';
+            div_.addEventListener('click', function (e) {
+                var img = querySelector('img');
+                window.location.href = "./page3.html?num=" + img.attributes.title.value
+            }, false);
+            querySelector('.ctner').appendChild(div_);
+        }
+
+        function setTimer() {
+            setTimeout(function () {
+                querySelector('audio').play();
+            }, 1000);
+        }
+
+    })();
+</script>
+</body>
+</html>

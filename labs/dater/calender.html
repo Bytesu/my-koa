@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>calender 日历</title>
+    <style>
+        body {
+            font-family: 'Microsoft Yahei', Tahoma, Arial, Helvetica, STHeiti;
+            background: #252527;
+        }
+
+        .calender-ctner {
+            width: 993px;
+            margin: 0 auto;
+        }
+
+        .cal-ul-ctner {
+
+            overflow: hidden;
+            height: 70px;
+            position: relative;
+        }
+
+        .cal-ctner {
+            list-style: none;
+            zoom: 1;
+            -webkit-padding-start: 0px;
+            padding: 0px;
+            width: 350%;
+            position: relative;
+            -webkit-margin-before: 0em;
+            -webkit-margin-after: 0em;
+            top: -15px\9;/*//ie8 */
+        }
+
+        .cal-ctner li {
+            float: left;
+            text-align: center;
+            font-size: 12px;
+            color: #FFF;
+            position: relative;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+        }
+
+        .clearfix {
+            zoom: 1;
+        }
+
+        .cal-ctner li > a {
+            display: block;
+            background: #cacaca;
+            margin: 4px 3px;
+            width: 26px;
+            height: 26px;
+            text-align: center;
+            line-height: 30px;
+            text-decoration: none;
+            color: #FFF;
+            font-size: 18px;
+            border-radius: 4px;
+        }
+
+        .cal-ctner li > a.active {
+            background: #fccd45;
+        }
+
+        .cal-ctner li > a.active:hover {
+            background: #ac007c;
+        }
+
+        .cal-tips {
+            position: fixed;
+            width: 340px !important;
+            display: inline-block;
+            z-index: 100;
+        }
+
+        .cal-tips-ctnt {
+            box-shadow: 1px 1px 5px rgba(50, 50, 50, .6);
+            background: rgba(50, 50, 50, .6);
+            position: relative;
+            color: #FFF;
+            display: inline-block;
+            padding: 5px;
+            border-radius: 3px
+        }
+
+        .cal-tips-down {
+            background: url("home_fleche_hover_date.png");
+            position: absolute;
+            bottom: -15px;
+            width: 20px;
+            float: right;
+            height: 18px;
+            left: 150px;
+        }
+
+        a.cal-minus {
+            display: block;
+            float: left;
+            width: 12px;
+            height: 21px;
+            background: url("css-sprite.png");
+            background-position: -69px 2px;
+            cursor: pointer;
+            position: relative;
+            top: -48px;
+            left: -12px;
+        }
+
+        a.cal-plus {
+            display: block;
+            float: right;
+            width: 12px;
+            height: 21px;
+            background: url("css-sprite.png");
+            background-position: -58px 2px;
+            cursor: pointer;
+            position: relative;
+            top: -48px;
+            right: -12px;
+        }
+
+        a.cal-plus:hover, a.cal-minus:hover {
+            text-decoration: none;
+        }
+
+        .cal-tips img {
+            float: left;
+            width: 40px;
+            height: 40px;
+            margin: auto 0;
+            position: relative;
+            top: 6px;
+        }
+
+        .cal-tips-ctnt2 {
+            position: relative;
+            top: 6px;
+            margin-left: 45px;
+            text-align: left;
+            line-height: 100%;
+        }
+
+        .cal-item {
+
+        }
+
+        .not-first {
+            border-top: 1px solid gray;
+            margin-top: 6px;
+        }
+
+        .cal-tips-title {
+            ffont-size: 18px;
+            line-height: 18px;
+            font-weight: 600;
+        }
+
+        .cal-tips-ctnt-time {
+            font-size: 14px;
+        }
+
+        .cal-tips-ctnt-ctner {
+            line-height: 14px;
+            display: inline;
+        }
+
+        .show-status {
+            float: right;
+            color: #FFF;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            background: #cacaca;
+            margin: 1px 3px;
+            height: 24px;
+            text-align: center;
+            line-height: 24px;
+            text-decoration: none;
+            font-size: 14px;
+            border-radius: 1px;
+            padding: 1px 6px;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            position: relative;
+            top: -6px;
+        }
+
+        .show-status0 {
+            background: #ac007c !important;
+        }
+
+        .show-status1 {
+            background: #cacaca;
+        }
+
+        .show-status2 {
+
+            background: #fccd45;
+        }
+    </style>
+</head>
+<body>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div class="calender-ctner" id="calender-ctner"></div>
+</body>
+<script src="jquery.min.js"></script>
+<script src="jquery.calender.js"></script>
+<script>
+    $(function () {
+
+        /***
+         * 用法说明:
+         * 1.将本文件上面样式引入
+         * 2.将jquery.calender.js文件引入
+         * 3.如下方法初始化,其中set,date参数为必填值
+         *
+         *
+         * Note:
+         * 1.替换下箭头
+         * 2.根据日历时间取数据接口返回的数据中,图片url绝对路经最好.
+         */
+        $('#calender-ctner').calender({
+            date: '2015-06-02',//日期字符串
+            url: {
+                set: '/dater/package.json',//请求31天的url,建议绝对路径,[必填]
+                date: '/dater/date.json'//请求单天的url,建议绝对路径[必填]
+            },
+            data: {}
+        });
+    });
+</script>
+</html>

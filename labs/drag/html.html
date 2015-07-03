@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Drag & Drop</title>
+    <style>
+        .dragable {
+            list-style: none;
+            width: 150px;
+        }
+
+        .dragable li {
+            line-height: 30px;
+            border-bottom: dashed 1px saddlebrown;
+            padding: 5px;
+        }
+        .dragable li:active{
+            cursor:default;
+        }
+    </style>
+</head>
+<body>
+
+<ul class="dragable">
+    <li>元素一</li>
+    <li>元素二</li>
+    <li>元素三</li>
+    <li>元素四</li>
+    <li>元素五</li>
+</ul>
+<script src="../../public/components/jquery/dist/jquery.js"></script>
+<script>
+    $(function () {
+
+        function Drag() {
+            this.$drag = $('.drag');
+            this.listener();
+        }
+
+        Drag.prototype.listener = function () {
+            var down = false,that =this;
+            this.$drag.children('li').mousedown(function (e) {
+                e.stopPropagation();
+                down = true;
+            });
+            this.$drag.children('li').mousemove(function (e) {
+                e.stopPropagation();
+                if(!down)return false;
+                //e.pageX;
+                that.move(this,that.targetArg(this,e));
+            });
+            this.$drag.children('li').mouseup(function (e) {
+                down= false;
+                e.stopPropagation();
+                //e.pageX;
+            });
+        };
+        Drag.prototype.move = function (_this, arg) {
+            $(_this).css({
+                top:
+            })
+        };
+        Drag.prototype.targetArg = function(_this,e){
+            return {
+                px: e.pageX,
+                py:e.pageY,
+                w:$(_this).width(),
+                h:$(_this).height()
+            };
+        };
+        new Drag();
+    })
+</script>
+</body>
+</html>
