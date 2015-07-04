@@ -1,0 +1,64 @@
+@import "var_";
+
+.container {
+  background-color: $color-f8;
+  .content {
+    zoom: 1;
+    background: $white;
+    .content-body {
+      z-index: 10;
+      position: relative;
+    }
+
+    .content-siderbar {
+
+    }
+
+    .nav-menu {
+
+    }
+  }
+}
+
+.content {
+  margin: 0 auto;
+}
+
+@media (min-width: 360px) {
+  .content {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 540px) {
+  .content {
+    width: 540px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 760px) {
+  .content-body {
+    background-color: #fff;
+    width: 540px;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  .content {
+    width: 750px;
+    margin: 30px auto 0;
+  }
+}
+
+@media (min-width: 800px) {
+  .content-body {
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .content {
+    width: 760px;
+    margin: 30px auto 20px;
+  }
+}

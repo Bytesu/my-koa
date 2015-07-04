@@ -1,0 +1,44 @@
+.pc {
+  .goods-list li .image {
+    width: 235px;
+    height: 235px;
+    background: url('http://static.koudaitong.com/v2/shop/images/icons/slash.png?1402064968') repeat scroll 0 0;
+    position: relative;
+  }.goods-list {
+     margin-top: 30px;
+   }
+  .goods-list li {
+    width: 235px;
+    height: 330px;
+    float: left;
+    margin: 0 20px 20px 0;
+    background-color: #fff;
+  }
+  .goods-list li .title {
+    color: #333333;
+    padding: 20px 15px 0;
+    margin-bottom: 10px;
+    line-height: 1.5em;
+    height: 38px;
+    overflow: hidden;
+  }
+  .goods-list li .price {
+    color: #f60;
+    padding: 0 0 0 15px;
+  }
+  .goods-list li .origin-price {
+    color: #666666;
+  }
+  .goods-list li .image img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: auto;
+    height: auto;
+    max-width: 235px;
+    max-height: 235px;
+  }
+}

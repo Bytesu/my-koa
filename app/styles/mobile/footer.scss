@@ -1,0 +1,40 @@
+@import "var_";
+
+.footer {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 16px;
+  background-color: #f8f8f8;
+}
+
+.copyright {
+  background-color: #f8f8f8;
+  color: #999;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.copyright .ft-links {
+  padding: 15px;
+  text-align: center;
+}
+
+.copyright .ft-links ~ .ft-copyright {
+  border-image: url($border-border-image) 2 stretch;
+  border-top: 2px solid #e5e5e5;
+}
+
+.copyright .ft-copyright {
+  padding: 50px 0 20px;
+  margin: 0 15px;
+  text-align: center;
+  font-size: 12px;
+  background-size: 73px 24px;
+}
+
+.copyright .ft-copyright > a {
+  padding-top: 45px;
+  color: #ccc;
+}

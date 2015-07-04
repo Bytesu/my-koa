@@ -1,0 +1,96 @@
+@import "var_";
+.content.transparent{
+  background: transparent !important;
+}
+.custom-title {
+  background: url($border-border-image) left top no-repeat;
+  background-size: 100% 1px;
+  background-position: left bottom;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  word-break: break-all;
+  .title {
+    margin: 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all{
+.sc-goods-list.list .goods-card.card {
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+}
+}
+.sc-goods-list.list .goods-card .photo-block {
+  float: left;
+  margin-right: 13px;
+  width: 125px;
+  height: 125px;
+}
+.sc-goods-list.list .goods-card.card {
+  padding: 5px 0px 5px 5px;
+  margin: 8px;
+  border-image: url($border-line) 2 stretch;
+  border-top: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+  background: #fff;
+}
+.sc-goods-list .goods-card {
+  position: relative;
+  margin-left: 5px;
+  margin-right: 5px;
+}.sc-goods-list.list .goods-card .photo-block img {
+   max-width: 125px;
+   max-height: 125px;
+ }.sc-goods-list .buy-response {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 70px;
+    width: 70px;
+    opacity: 0;
+  }
+.sc-goods-list.list .goods-card .info {
+  height: 125px;
+}.sc-goods-list.list .goods-card .info .goods-price {
+   font-size: 15px;
+   margin-bottom: 8px;
+ }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all{
+.sc-goods-list .goods-buy.btn1, .sc-goods-list .goods-buy.btn2, .sc-goods-list .goods-buy.btn3, .sc-goods-list .goods-buy.btn4 {
+  background-image: url($bg-imgx2);
+  background-repeat: no-repeat;
+  background-size: 40px auto;
+}}
+.sc-goods-list .buy-response {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  height: 70px;
+  width: 70px;
+  opacity: 0;
+}.sc-goods-list .goods-buy.btn1 {
+   right: 10px;
+   bottom: 8px;
+   height: 25px;
+   width: 30px;
+   background-position: 0 0;
+ }
+.sc-goods-list .link .goods-buy {
+  position: absolute;
+}.sc-goods-list .goods-buy.btn1, .sc-goods-list .goods-buy.btn2, .sc-goods-list .goods-buy.btn3, .sc-goods-list .goods-buy.btn4 {
+   background-image: url($bg-img);
+   background-repeat: no-repeat;
+ }

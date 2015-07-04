@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>My Koa</title>
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Web Starter Kit">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <meta name="theme-color" content="#3372DF">
+    <link rel="stylesheet" href="../styles/laolvo.css">
+</head>
+<body class="container pc">
+<div class="header">
+    <div class="container">
+        <a href="javascript:;" class="js-hover logo" data-target="js-shop-info">
+            罗辑思维              <span class="icon-wxv"></span>
+            <span class="smaller-title">微店铺首页</span>
+        </a>
+        <ul class="nav">
+            <li class="separate">|</li>
+            <li>
+                <a href="http://detail.koudaitong.com/show/goods/newest?alias=7929htb" target="_blank">
+                    最新商品
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 浮层店铺信息 -->
+    <div class="shop-info shop-info-fixed js-shop-info">
+        <div class="container clearfix">
+            <div class="js-async shop-qrcode pull-left" data-url="http://detail.koudaitong.com/show/goods/teamurl.json">	<img src="http://wap.koudaitong.com/v2/common/url/create?type=homepage&amp;kdt_id=54023" alt="二维码"></div>
+            <div class="shop-desc pull-left">
+                <dl>
+                    <dt>
+                        罗辑思维                              （ <span class="icon-wxv"></span> <span class="wxv">微信认证</span> ）
+                    </dt>
+                    <dd></dd>
+                    <dt>微信扫描二维码，访问我们的微信店铺</dt>
+                    <dd>您可以使用微信联系我们，随时随地的购物、客服咨询、查询订单和物流...</dd>
+                </dl>
+            </div>
+            <span class="arrow"></span>
+        </div>
+    </div>
+</div>
+<div class="container main clearfix">
+    <div class="content">
+        <div class="goods-summary clearfix">
+            <!-- 商品信息 -->
+            <div class="goods-info pull-right">
+                <h3 class="goods-title">孙浩限量签名版画《马的肖像》</h3>
+                <div class="goods-price clearfix">
+                    <strong class="goods-current-price pull-left">
+                        <em class="goods-rmb">￥</em>3680.00                          </strong>
+            <span class="goods-origin-price pull-left">
+                          	            </span>
+                </div>
+                <table class="goods-meta">
+                    <tbody>
+                    <tr class="first-child">
+                        <td class="goods-meta-name">运费：</td>
+                        <td>￥0.00</td>
+                    </tr>
+                    <tr class="last-child">
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="goods-action clearfix">
+                    <a href="javascript:;" class="goods-buy-link icon-buybutton pull-left js-hover" data-target="js-popover-goods" data-position="top" data-shake="true">立即购买</a>
+                    <a href="javascript:;" class="btn-share goods-share-link pull-left js-hover" data-target="js-popover-share" data-position="top" data-shake="true">收藏 / 分享</a>
+                </div>
+                <div class="goods-payment">
+                    <dl class="clearfix">
+                        <dt>支付：</dt>
+                        <dd class="pull-left clearfix">
+                            <a href="javascript:;" class="clearfix pull-left"><span class="icon-wxpay"></span>微信支付</a>
+                            <a href="javascript:;" class="clearfix pull-left"><span class="icon-bankpay"></span>银行卡</a>
+                            <!-- <a href="javascript:;" class="clearfix pull-left"><span class="icon-alipay"></span>支付宝</a> -->
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- 商品图片 -->
+            <div class="goods-image pull-left">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper" style="width: 1200px; height: 400px;">
+                        <div class="swiper-slide swiper-slide-visible swiper-slide-active" style="width: 400px; height: 400px;">
+                            <div class="swiper-image">
+                                <img src="http://imgqn.koudaitong.com/upload_files/2015/06/18/FgTR95qq_tUVdzhaTy6gqZA0EUyh.jpg!580x580.jpg" alt="商品图">
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 400px; height: 400px;">
+                            <div class="swiper-image">
+                                <img src="http://imgqn.koudaitong.com/upload_files/2015/06/18/FlHENCcz38qLhusTuZOGAoTFV3dv.jpg!580x580.jpg" alt="商品图">
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 400px; height: 400px;">
+                            <div class="swiper-image">
+                                <img src="http://imgqn.koudaitong.com/upload_files/2015/06/18/FkZjlP71lcUvMIkOa3E1HwMBkA13.jpg!580x580.jpg" alt="商品图">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination">
+                    <div class="swiper-pagination-list">
+                                                <span class="swiper-pagination-switch swiper-active-switch" data-index="0">
+                    <img src="http://imgqn.koudaitong.com/upload_files/2015/06/18/FgTR95qq_tUVdzhaTy6gqZA0EUyh.jpg!100x100.jpg" width="44" height="44" alt="商品缩略图">
+                    <span class="swiper-arrow"></span>
+                  </span>
+                                                                <span class="swiper-pagination-switch" data-index="1">
+                    <img src="http://imgqn.koudaitong.com/upload_files/2015/06/18/FlHENCcz38qLhusTuZOGAoTFV3dv.jpg!100x100.jpg" width="44" height="44" alt="商品缩略图">
+                    <span class="swiper-arrow"></span>
+                  </span>
+                                                                <span class="swiper-pagination-switch" data-index="2">
+                    <img src="http://imgqn.koudaitong.com/upload_files/2015/06/18/FkZjlP71lcUvMIkOa3E1HwMBkA13.jpg!100x100.jpg" width="44" height="44" alt="商品缩略图">
+                    <span class="swiper-arrow"></span>
+                  </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="js-detail-container" style="margin-top: 5px;"><div class="js-tabber-container goods-detail">
+
+
+            <div class="js-tabber-content">
+                <div class="js-part js-goods-detail goods-tabber-c" data-type="goods">
+                    <div class="js-components-container components-container">
+
+
+
+                        <div class="custom-richtext js-view-image-list">
+
+                            <p style="margin-bottom: 15px; text-align: center;"><strong style="color: rgb(75, 172, 198); text-align: center;"><span style="font-size: 18px;">丑话在前</span></strong></p><p style="margin-bottom: 5px;">关于<span style="color: rgb(49, 133, 155);"><strong>物流发货</strong></span>：</p><p style="margin-bottom: 5px;">第一，<span style="color:#31859b">一周内</span>发货，急性子的买家请谨慎出手。（艺术品需要专业的装裱、包装流程，为了保证您的画品质量，请留给我们一些必要的工期，谢谢您的理解。）</p><p style="margin-bottom: 5px;">第二，使用专业物流配送机构发货，签收时请<span style="color: rgb(49, 133, 155);">当面拆包装验货</span>，如发现货品有破损，请拒收并联系我们：</p><p style="margin-bottom: 5px;"><span style="color: rgb(49, 133, 155);"><strong>客服电话：</strong>400-010-7599</span></p><p style="margin-bottom: 20px;"><span style="color: rgb(49, 133, 155);"><strong>客服邮箱：</strong>service@luojilab.com</span></p><p style="margin-bottom: 5px;">关于<span style="color: rgb(49, 133, 155);"><strong>退换货</strong></span>：</p><p style="margin-bottom: 5px;">艺术品购买，一靠眼缘，二靠感觉。请大家要相信自己的第一感觉，<span style="color: rgb(49, 133, 155);">非质量问题不支持退换</span>，也求大家也可怜可怜我们，艺术品的包装物流运输成本那不是一般的高啊。</p><p style="text-align: center; margin-top: 15px;"><span style="font-size: 18px; color: rgb(75, 172, 198);"><strong>好画在后</strong></span></p><p style="margin-bottom: 10px;"><span style="font-size: 14px; color: rgb(75, 172, 198); background-color: rgb(75, 172, 198);">1</span><span style="font-size: 14px;">&nbsp;&nbsp;</span>作品图</p><p style="margin-bottom: 10px;"><img class="js-lazy js-view-image-item" data-src="http://imgqn.koudaitong.com/upload_files/2015/06/18/FjNT5cxCq0aY3ufuaQL57LSMxtXS.png!730x0.jpg"></p><p style="margin-bottom: 10px;"><span style="color: rgb(75, 172, 198); font-size: 14px; background-color: rgb(75, 172, 198);">2</span><span style="font-size: 16px;">&nbsp; 作品介绍</span><br></p><table><tbody><tr class="firstRow"><td width="107" valign="top"><span style="font-size: 14px;">作品名称<br></span></td><td width="290" valign="top" style="word-break: break-all;"><p><span style="font-size: 14px;">《马的肖像》<br></span></p></td></tr><tr><td valign="top" colspan="1" rowspan="1" style="word-break: break-all;"><span style="font-size: 14.2857151031494px;"></span><span style="font-size: 14px;">原画作者</span></td><td valign="top" colspan="1" rowspan="1" style="word-break: break-all;">孙浩<br></td></tr><tr><td width="109" valign="top" style="word-break: break-all;"><span style="font-size: 14px;">创作年代</span></td><td width="109" valign="top" style="word-break: break-all;"><span style="font-size: 14px;">2013年</span></td></tr><tr><td width="109" valign="top"><span style="font-size: 14px;">作品尺寸<br></span></td><td width="290" valign="top" style="word-break: break-all;"><p><span style="font-size: 14px;"></span></p><p><span style="font-size: 14px;"></span></p><p><span style="font-size: 14px;">画芯尺寸：68cmx63cm</span></p><p><span style="font-size: 14px;">含框尺寸：87cmx82cm</span></p></td></tr><tr><td width="109" valign="top" style="word-break: break-all;"><span style="font-size: 14px;">版 &nbsp; &nbsp; &nbsp; 数</span></td><td width="290" valign="top" style="word-break: break-all;"><span style="font-size: 14px;">30（含艺术家签名）</span></td></tr><tr><td valign="top" colspan="1" rowspan="1" style="word-break: break-all;"><span style="font-size: 14px;">版种技法</span></td><td valign="top" colspan="1" rowspan="1" style="word-break: break-all;"><span style="font-size: 14px;">纸本孔板</span></td></tr><tr><td valign="top" colspan="1" rowspan="1" style="word-break: break-all;"><span style="font-size: 14px;">材 &nbsp; &nbsp; 质</span></td><td valign="top" colspan="1" rowspan="1" style="word-break: break-all;"><span style="font-size: 14px;">纸质</span></td></tr><tr><td width="109" valign="top" style="word-break: break-all;"><span style="font-size: 14px;">出品机构</span></td><td width="290" valign="top" style="word-break: break-all;"><p><span style="font-size: 14px;">德加艺邦</span></p></td></tr></tbody></table><p style="margin-bottom: 10px; margin-top: 15px;"><span style="color: rgb(75, 172, 198); font-size: 14px; background-color: rgb(75, 172, 198);">2</span>&nbsp; 效果图</p><p><img class="js-lazy js-view-image-item" data-src="http://imgqn.koudaitong.com/upload_files/2015/06/18/Fpj-q07IwzbYM9LO-gR1clyb44Rp.jpg!730x0.jpg"></p><p style="text-align: center; margin-bottom: 0px;"><span style="color: rgb(192, 0, 0); font-size: 14px;">图为效果示意图&nbsp; 请以实物为准</span></p><p style="margin-bottom: 5px;"><span style="color: rgb(49, 133, 155);"></span></p><p><span style="background-color: rgb(49, 133, 155); color: rgb(49, 133, 155);"><strong>1</strong></span><strong><span style="color: rgb(49, 133, 155);"> 关于《马的肖像》</span></strong></p><p>纯粹的黑色背景中，一匹骏马的头部赫然浮现，仿佛刚刚历经黑暗中的跋涉迎来光明。它离你如此切近，甚至肌肉和血管的纹理都清晰可辨，似乎能感受得到它的呼吸。凝视着它，也接受它清澈目光的注视，你会感觉到这不是一匹马，而是一位忠诚坚毅的朋友。</p><p>画家孙浩喜欢表现静止状态下的马，尤其是对马的头颈部分进行特写般的描绘。在他的眼中，马是具有强大的精神力量的动物，静默时可以隐于黑暗，但是一旦见到光明，便可瞬间启动，驰骋疆野。</p><p><strong><span style="color: rgb(49, 133, 155);">骏马配英雄，这匹时刻准备奔腾的马儿送给你心中的英雄，祝福马到功成。</span></strong></p><p style="margin-bottom: 5px;"><span style="color: rgb(49, 133, 155); background-color: rgb(49, 133, 155);"><strong>1</strong></span><span style="color: rgb(49, 133, 155);"><strong> 艺术家简介</strong></span></p><p style="margin-bottom: 5px;"><span style="color: rgb(49, 133, 155);"><strong><img class="js-lazy js-view-image-item" data-src="http://imgqn.koudaitong.com/upload_files/2015/06/18/FvVnMrgAVlWbqloY2y5LsZ0alDMu.jpg!730x0.jpg"></strong></span></p><p style="margin-bottom: 5px;"><br></p><p>孙浩，1980年生于山东，2001年毕业于鲁迅美术学院中国画系，2005年毕业于中央美术学院中国画系材料与表现工作室，获硕士学位。</p><p>孙浩是年轻一辈当代水墨领军人物，青年水墨创作团体“柒舍雅集”成员。他的创作手法和理念独树一帜，多尝试用水墨表现光影和形体，将素描的坚实体感和水墨的澹然灵性结合。</p><p>作品被中央美术学院、鲁迅美术学院、深圳关山月美术馆、岭南美术馆等重要艺术机构收藏。</p><p><img class="js-lazy js-view-image-item" data-src="http://imgqn.koudaitong.com/upload_files/2015/03/25/FlQNf1naWzb4_SJh3dMfUjcfqBpo.png!730x0.jpg"></p><p><a target="_blank" href="http://wap.koudaitong.com/v2/showcase/tag?alias=15u6sp7qn&amp;spm=g9127520_h52701"></a></p></div>
+
+
+
+
+
+                        <ul class="js-goods-list sc-goods-list clearfix list size-3" data-size="3" style="visibility: visible;">
+
+
+                            <!-- 商品区域 -->
+                            <!-- 展现类型判断 -->
+
+                            <li class="js-goods-card goods-card goods-list normal">
+                                <a href="http://wap.koudaitong.com/v2/goods/o2avzi1c" class="js-goods link clearfix" target="_blank" data-goods-id="51465013" title="孙浩限量签名版画《相濡以沫》">
+                                    <div class="photo-block">
+                                        <img class="goods-photo js-goods-lazy" data-src="http://imgqn.koudaitong.com/upload_files/2015/06/18/FhxCcJAewm2U35tQPvuNHkqELATd.jpg!140x140+2x.jpg">
+                                    </div>
+                                    <div class="info">
+                                        <p class="goods-title">孙浩限量签名版画《相濡以沫》</p>
+                                        <p class="goods-price"><em>￥3980.00</em></p>
+                                        <div class="goods-buy btn0"></div>
+                                        <div class="js-goods-buy buy-response" data-alias="o2avzi1c" data-postage="0" data-buyway="1" data-id="51465013" data-title="孙浩限量签名版画《相濡以沫》" data-price="3980.00" data-isvirtual="0"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="js-goods-card goods-card goods-list normal">
+                                <a href="http://wap.koudaitong.com/v2/goods/1cihdd5s4" class="js-goods link clearfix" target="_blank" data-goods-id="34583717" title="肖峰限量签名版画《飒》">
+                                    <div class="photo-block">
+                                        <img class="goods-photo js-goods-lazy" data-src="http://imgqn.koudaitong.com/upload_files/2015/06/01/FoLePlJ-1VOfzGT0gPe4kFISCVuL.jpg!140x140+2x.jpg">
+                                    </div>
+                                    <div class="info">
+                                        <p class="goods-title">肖峰限量签名版画《飒》</p>
+                                        <p class="goods-price"><em>￥1680.00</em></p>
+                                        <div class="goods-buy btn0"></div>
+                                        <div class="js-goods-buy buy-response" data-alias="1cihdd5s4" data-postage="0" data-buyway="1" data-id="34583717" data-title="肖峰限量签名版画《飒》" data-price="1680.00" data-isvirtual="0"></div>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+
+
+
+
+
+
+                        <!-- 图片广告 -->
+
+                        <ul class="custom-image clearfix js-view-image-list">
+
+                            <li>
+                                <a href="http://wap.koudaitong.com/v2/showcase/tag?alias=15u6sp7qn">
+                                    <img class="js-lazy " data-src="http://imgqn.koudaitong.com/upload_files/2015/03/06/FgF5jYS3QvvILohB6lX_N8PxEdqC.jpg!300x300+2x.jpg">
+                                </a>
+                            </li>
+
+                        </ul>
+
+
+
+                    </div>
+                </div>            </div>
+
+        </div>
+
+
+        </div>
+        <div class="js-footer" style="min-height: 1px;">
+            <!-- <textarea id="footer-delay" style="display:none;"> -->
+
+
+            <div class="footer">
+                <div class="copyright">
+                    <div class="ft-links">
+                        <a href="http://wap.koudaitong.com/v2/showcase/homepage?kdt_id=54023" target="_blank">店铺主页</a>
+                        <a href="http://wap.koudaitong.com/v2/showcase/usercenter?kdt_id=54023" target="_blank">会员中心</a>
+                        <a href="javascript:;" class="js-open-follow">关注我们</a>
+                    </div>
+                    <div class="ft-copyright">
+                        <a href="http://youzan.com" target="_blank">有赞微商城提供技术支持</a>
+                    </div>
+                </div>
+            </div>
+            <!-- </textarea> -->
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <!-- 店铺简单信息 -->
+        <div class="shop-card clearfix" style="padding: 0px;">
+            <div class="shop-image pull-left">
+                <img src="http://imgqn.koudaitong.com/upload_files/2015/01/26/FoX21i8VqwlCwjyDW618p66vd7g8.png" alt="店铺logo">
+                <span class="icon-wxv"></span>
+            </div>
+            <div class="shop-link pull-left">
+                <span class="shop-name">罗辑思维</span>
+                <a href="javascript:;" class="btn-add-wx js-hover" data-target="popover-weixin" data-position="bottom" data-align="right" data-shake="true">加微信好友</a>
+            </div>
+        </div>
+        <div class="hot-goods">
+            <h5 class="section-title"><span>热门商品</span></h5>
+            <ul class="js-async" data-url="http://detail.koudaitong.com/show/goods/toprandgoods.json"><li>
+                <a href="http://detail.koudaitong.com/show/goods?alias=zfhp9g7d" target="_blank">
+                    <div class="image">
+                        <img src="http://imgqn.koudaitong.com/upload_files/2015/04/06/FoftQJJo0slXkBD2kZTE1LjiUPny.jpg!260x260.jpg" alt="大开本线装书套装（梁思成建筑手绘图+弘一法师手书经文+耕织图）" width="160" height="160">
+                    </div>
+                    <div class="title">大开本线装书套装（梁思成建筑手绘图+弘一法师手书经文+耕织图）</div>
+                    <span class="price">￥248.00</span>
+                </a>
+            </li>
+                <li>
+                    <a href="http://detail.koudaitong.com/show/goods?alias=17arnubhu" target="_blank">
+                        <div class="image">
+                            <img src="http://imgqn.koudaitong.com/upload_files/2015/04/25/Fq9i29Tm3mxvDOqkwRtuWKjBNni1.jpg!260x260.jpg" alt="弘一法师手书《佛说阿弥陀经》" width="160" height="160">
+                        </div>
+                        <div class="title">弘一法师手书《佛说阿弥陀经》</div>
+                        <span class="price">￥86.00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://detail.koudaitong.com/show/goods?alias=as6rn67p" target="_blank">
+                        <div class="image">
+                            <img src="http://imgqn.koudaitong.com/upload_files/2015/06/19/FkkMUH06ekILE-sNGlFawLLV9uWC.jpg!260x260.jpg" alt="《天堂茶话》（两册） 老子与孔子在天堂聊些什么" width="160" height="160">
+                        </div>
+                        <div class="title">《天堂茶话》（两册） 老子与孔子在天堂聊些什么</div>
+                        <span class="price">￥76.00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://detail.koudaitong.com/show/goods?alias=971eav42" target="_blank">
+                        <div class="image">
+                            <img src="http://imgqn.koudaitong.com/upload_files/2015/05/06/FrweqKFE3tWITfzY8w-d6Cxa9D28.jpg!260x260.jpg" alt="《道可道》 老子到底在说什么" width="160" height="160">
+                        </div>
+                        <div class="title">《道可道》 老子到底在说什么</div>
+                        <span class="price">￥42.00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://detail.koudaitong.com/show/goods?alias=1f4nrdv6e" target="_blank">
+                        <div class="image">
+                            <img src="http://imgqn.koudaitong.com/upload_files/2015/04/25/FotBtofXrPlSTIh080DJoYYVYCij.jpg!260x260.jpg" alt="又一课｜戴愫助你成为商务写作高手（仅限60席）" width="160" height="160">
+                        </div>
+                        <div class="title">又一课｜戴愫助你成为商务写作高手（仅限60席）</div>
+                        <span class="price">￥1200.00</span>
+                    </a>
+                </li></ul>
+        </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+.custom-nav-4 {
+  padding: 5px;
+  text-align: center;
+  li {
+    width: 25%;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    a {
+      display: block;
+      padding: 0 2px;
+      .nav-img-wap {
+        display: block;
+        overflow: hidden;
+      }
+      img {
+        vertical-align: middle;
+        max-width: 100%;
+      }
+      span.title {
+        color: #333;
+        height: 24px;
+        line-height: 24px;
+        font-size: 12px;
+      }
+    }
+
+  }
+}

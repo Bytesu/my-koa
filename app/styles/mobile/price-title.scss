@@ -1,0 +1,50 @@
+.goods-header {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.goods-header {
+  display: block;
+  height: auto;
+  padding: 8px 0 6px;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  border-top: 1px solid #f2f2f2;
+  background-color: #fff;
+}
+
+.goods-header .title {
+  font-weight: normal;
+  margin: 0;
+  padding: 0 10px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+}
+
+.goods-price {
+  padding: 5px 10px 2px;
+  text-align: left;
+}
+
+.current-price {
+  color: #f60;
+  display: inline-block;
+  font-size: 14px;
+}
+.goods-price i {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 20px;
+  vertical-align: baseline;
+}
+.current-price > span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.current-price .price {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background: #fafafa;  color: #333;
+            font: 12px/1.5 tahoma,arial,"Hiragino Sans GB","\5b8b\4f53",sans-serif;
+        }
+
+
+        .paper-material {
+            border-radius: 0px;
+            padding: 16px;
+            width: 324px;
+            margin: 16px auto;color:#666
+            background: white;
+            box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.14), 0 0px 0px 0 rgba(0, 0, 0, 0.12), 0 2px 1px -2px rgba(0, 0, 0, 0.2);
+            border: 1px solid #cecece;}
+        .item{
+            margin: 30px auto;
+        }
+        .console1{
+            border-radius: 2px;border: 1px solid rgba(0, 0, 0, 0.62);;width: 350px;height: 50px;text-align: center;background-color:red;color: white;font: 12px/1.5 tahoma,arial,"Hiragino Sans GB","\5b8b\4f53",sans-serif; font-size: 30px; padding: 3px;box-shadow: 0px 0px 2px #888888;
+        }
+        .console2{
+            margin: 30px auto;border: 1px solid #ffa018;;width: 350px;height: 50px;text-align: center;background-color:#ff9900;color: white;font: 12px/1.5 tahoma,arial,"Hiragino Sans GB","\5b8b\4f53",sans-serif; font-size: 30px; padding: 3px;box-shadow: 0px 0px 2px #888888;
+        }
+    </style>
+    <script src="index.js" charset="utf-8"></script>
+    <title>控制台花样输出</title>
+</head>
+<body>
+<div class="paper-material">
+    <h2>控制台输出</h2>
+</div>
+
+<div class="item console1">oWhoa! 控制台问候....</div>
+<div class="item console2">oWhoa! 控制台问候....</div>
+<script>
+    console.log('%cWhoa! 控制台问候.... ','border-radius: 2px;margin: 30px auto;border: 1px solid rgba(0, 0, 0, 0.62);;width: 350px;height: 50px;text-align: center;background-color:red;color: white;font: 12px/1.5 tahoma,arial,"Hiragino Sans GB","\5b8b\4f53",sans-serif; font-size: 30px; padding: 3px;box-shadow: 0px 0px 2px #888888;")')
+</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+@import "var_";
+
+.nav-menu-1, .nav-menu-2, .nav-menu-3 {
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 40px;
+  background: #eaeaea;
+  color: #eee;
+  text-align: center;
+}
+
+.shop-nav {
+  position: fixed;
+  z-index: 99;
+}
+
+.nav-menu {
+  border: 0px none;
+  cursor: default;
+  font-size: 0;
+  line-height: 0;
+  .nav-item {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+.nav-menu-1 .nav-special-item a {
+  background-size: 25px 25px;
+  margin: 0 auto;
+}
+
+.nav-menu-1 a {
+  display: block;
+  color: #333;
+  text-shadow: 0 0 2px #f5f5f5;
+}
+
+.nav-menu a {
+  display: block;
+  height: 100%;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.home {
+  display: inline-block;
+  width: 45px;
+  color: #333;
+  font-weight: bold;
+  font-size: 14px;
+  background: url($home) no-repeat scroll center center;
+  background-size: 24px 24px;
+  text-indent: -10000px;
+  height: 40px;
+  vertical-align: top;
+}
+
+.nav-menu-1 {
+  border: 0px none;
+  border-image: url($border-border-image) 2 stretch;
+  border-top: 2px solid #e5e5e5;
+  background: no-repeat #fafafa;
+  background-size: 100% 100px;
+  height: 45px;
+  .nav-item {
+    float: left;
+    display: block;
+    height: 45px;
+  }
+}
+
+.nav-menu .mainmenu .arrow-weixin, .nav-menu .mainmenu .mainmenu-txt {
+  font-size: 14px;
+  line-height: 45px;
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+.nav-menu-1.has-menu-3 .nav-item {
+  width: 28%;
+}
+
+.nav-menu-1.has-menu-1 .nav-special-item, .nav-menu-1.has-menu-2 .nav-special-item, .nav-menu-1.has-menu-3 .nav-special-item {
+  width: 16%;
+}
+
+.nav-menu-1 .nav-item + .nav-item {
+  border-image: url($border-border-image) 2 stretch;
+  border-left: 2px solid #e5e5e5;
+}
