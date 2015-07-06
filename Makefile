@@ -5,4 +5,4 @@ test:
         --require should \
         **/test.js
 
-.PHONY: test
+    .PHONY: test
