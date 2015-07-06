@@ -1,0 +1,44 @@
+
+/*
+JS/JSON app declaration
+PM2允许通过JSON/JSON5/JS配置微调fine-tune需要管理进程process的行为、可选项、环境变量、日志文件等，增强了你的进程管理工作流
+
+url:
+  1. https://github.com/Unitech/PM2/blob/master/ADVANCED_README.md#watch--restart
+*/
+{
+
+  "apps" : [{
+    "name"      : "my-koa",
+    "script"    : "express.js",
+    "exec_mode":"cluster",
+    "instances":4,
+    "env": {
+      "COMMON_VARIABLE": "true"
+    },
+    "env_production" : {
+      "NODE_ENV": "production"
+    }
+  }],
+  "deploy" : {
+    "production" : {
+      "user" : "node",
+      "host" : "212.83.163.1",
+      "ref"  : "origin/master",
+      "repo" : "git@github.com:repo.git",
+      "path" : "/var/www/production",
+      "post-deploy" : "pm2 startOrRestart ecosystem.json --env production"
+    },
+    "dev" : {
+      "user" : "node",
+      "host" : "212.83.163.1",
+      "ref"  : "origin/master",
+      "repo" : "git@github.com:repo.git",
+      "path" : "/var/www/development",
+      "post-deploy" : "pm2 startOrRestart ecosystem.json --env dev",
+      "env"  : {
+        "NODE_ENV": "dev"
+      }
+    }
+  }
+}

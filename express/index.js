@@ -32,9 +32,10 @@ router.get("/", function (req, res) {
 });
 
 
-app.use(['/web'],require('./sub.web'));
-app.use(['/app'],require('./sub.app'));
-app.use(['/backend'],require('./sub.backend'));
+app.use(['/web'],require('./sub/web.js'));
+app.use(['/app'],require('./sub/app.js'));
+app.use(['/backend'],require('./sub/backend.js'));
+app.use(['/d'],require('./sub/demo.js'));
 
 app.use('/dev',router);
 // catch 404 and forward to error handler
@@ -47,7 +48,7 @@ app.use(function (req, res, next) {
 // no stacktraces leaked to user
 app.use(function (err, req, res, next) {
     res.status(err.status || 500);
-    console.log('erroorrr ----------------')
+    console.log('erroorrr ----------------');
     res.render('404', {
         message: err.message,
         error: {}

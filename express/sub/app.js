@@ -3,13 +3,13 @@
  */
 var express = require('express');
 /***
- *  移动端子应用
+ *  绉诲姩绔瓙搴旂敤
  */
 var app  = express();
 
 app.get('/',function(req,res,next){
 
     console.log('app.mountpath --'+app.mountpath);
-    res.send('移动子应用首页 ，建设中...  ')
+    res.send('绉诲姩绔瓙搴旂敤棣栭〉锛屽缓璁句腑...  ')
 });
 module.exports = app;

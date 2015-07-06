@@ -3,13 +3,13 @@
  */
 var express = require('express');
 /***
- *  前台子应用
+ *  PC
  */
 var web  = express();
 
 web.get('/',function(req,res,next){
 
     console.log('web.mountpath --'+web.mountpath);
-    res.send('PC前端子应用首页 ，建设中...  ');
+    res.send('PC home page  ...  ');
 });
 module.exports = web;

@@ -3,10 +3,10 @@
  */
 var express = require('express');
 /***
- *  ��̨��Ӧ��
+ *  后台
  */
 var backend  = express();
-backend.all('*',require('./authentication'));
+backend.all('*',require('./../middleware/authentication/index'));
 backend.get('/',function(req,res,next){
     console.log(res.locals);
     console.log(process.env.NODE_ENV);
@@ -19,7 +19,7 @@ backend.get('/',function(req,res,next){
     res.append('Warning', '199 Miscellaneous warning');
     res.cookie('name', 'tobi', { domain: '.example.com', path: '/admin', secure: true });
     res.cookie('rememberme', '1', { expires: new Date(Date.now() + 900000), httpOnly: true });
-    //res.send('sub app backend test !  ');
+    res.send('sub app backend test !  ');
     //res.status(500).json({ error: 'message' })
     //res.format({
     //    text: function(){
@@ -36,7 +36,7 @@ backend.get('/',function(req,res,next){
     //});
     //res.redirect(200 ,'www.baidu.com')
 
-    res.download('./index.js', function(err){
+   /* res.download(__dirname+'/index.js', function(err){
         if (err) {
             console.log('下载错误')
             // Handle error, but keep in mind the response may be partially-sent
@@ -44,7 +44,7 @@ backend.get('/',function(req,res,next){
         } else {
             // decrement a download credit, etc.
         }
-    });
+    });*/
 
 
 });
