@@ -35,11 +35,13 @@
         window.document.write('<img title="'+path+'" src="./imgs/'+imgPath+path+'.jpg" style="width:100%;"> ');
     </script>
 </div>
+
 <audio controls="controls" autoplay="true"  class="hide" loop="loop">
     <script>
-        var imgPath = getSingle().isAndroid()?'Helium':'iphone';
+        var imgPath = getSingle().isAndroid()?'Helium':'Opening';
         window.document.write('<source src="./sound/'+imgPath+'.ogg"/>');
     </script>
+
 </audio>
 <script>
     (function(){
@@ -69,7 +71,7 @@
                     window.location.href="./recording.html?num="+img.attributes.title.value
                 },false);
 
-                querySelector('.ctner').appendChild(div_);
+                //querySelector('.ctner').appendChild(div_);
                 querySelector('.ctner').appendChild(div_right);
             }
         },false)

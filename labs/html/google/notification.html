@@ -1,0 +1,64 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google 桌面通知</title>
+    <meta name="generator" content="editplus" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv='content-type' content='text/html; charset=utf-8' />
+</head>
+<body>
+
+<button id='btn'>Html5 桌面通知</button>
+<!--http://www.w3.org/TR/notifications/#activating-a-notification-->
+<script type='text/javascript'>
+    document.querySelector("#btn").addEventListener('click', notify, false);
+
+    function notify() {
+
+        //new Notification("Bob: Hi / Are you free this afternoon?", { tag: 'chat_Bob' });
+
+        /*
+        var notification = new Notification(data.title, { //data.name: 桌面通知标题
+            tag: "testTag", //标签
+            icon: data.icon, //图片
+            body: data.content //内容
+        });
+//十秒之后关闭
+        notification.onshow = function(){
+            setTimeout(function(){
+                notification.close();
+            }, 10000);
+        }
+        return false;*/
+        var data = {
+            title:'Notification',
+            icon:'http://imgqn.koudaitong.com/upload_files/2014/07/18/Fpzw5QWU7h-d1K7y-pCYe0F_L-NL.jpg',
+            content:'那路或多那路或多，找到原因就好办了，接下来就是改改改时间。0 0谢谢 下个星期我抽点时间改好发出来吧'
+        };
+        Notification.requestPermission(function (perm) {
+
+            if (perm == "granted") {   //判断是否允许桌面通知 "granted"：允许 "denied":拒绝 "default": 等于拒绝，但用户是还未选择状态
+                var notification = new Notification(data.title, { //data.name: 桌面通知标题
+                    tag: "testTag", //标签
+                    icon: data.icon, //图片
+                    body: data.content //内容
+                });
+                //十秒之后关闭
+                notification.onshow = function(){
+                    setTimeout(function(){
+                        notification.close();
+                    }, 10000);
+                }
+            }
+        })
+    }
+</script>
+</body>
+</html>
+
+
+

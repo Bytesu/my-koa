@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>My Koa</title>
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Web Starter Kit">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <meta name="theme-color" content="#3372DF">
+    <link rel="stylesheet" href="../styles/laolvo.css">
+</head>
+<body class="container">
+<div class="header">
+
+</div>
+<div class="content">
+
+    <div class="content-body">
+        <!--商品搜索-->
+        <div class="custom-search">
+            <form action="http://wap.koudaitong.com/v2/search" method="GET">
+                <input type="search" class="custom-search-input" placeholder="商品搜索：请输入商品关键字" name="q" value="">
+                <input type="hidden" name="kdt_id" value="54023">
+                <button type="submit" class="custom-search-button">搜索</button>
+            </form>
+        </div>
+        <!--图片广告-->
+        <div class="custom-image-swiper js-swp swp">
+            <div class="swiper-wrapper js-swp-wrap js-view-image-list" style="height: 304px;">
+                <a class="swp-page" href="#" target="_blank"
+                   style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; display: block; -webkit-transform: translate3d(0px, 0px, 0px);">
+                    <img class=""
+                         src="http://imgqn.koudaitong.com/upload_files/2015/07/04/FqYDC-pjfIK7ntEopMubhI3pzzwo.jpg!730x0.jpg">
+                </a>
+            </div>
+            <div class="swiper-pagination js-swiper-pagination">
+                <ul class="swp-thumbnail-list">
+                    <li class="swiper-pagination-switch swiper-active-switch"></li>
+                    <li class="swiper-pagination-switch"></li>
+                    <li class="swiper-pagination-switch"></li>
+                    <li class="swiper-pagination-switch"></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--图片广告-->
+        <div class="custom-image-swiper custom-image-swiper-single js-swp swp">
+            <div class="swiper-wrapper js-swp-wrap js-view-image-list" style="height: 70px;">
+                <a class="swp-page" href="javascript:void(0);" target="_blank">
+                    <img class="js-view-image-item"
+                         src="http://imgqn.koudaitong.com/upload_files/2015/03/17/FqKqUKQl11She0y2iGl2rgTk7Uk3.png!730x0.jpg">
+                </a>
+            </div>
+            <div class="swiper-pagination js-swiper-pagination"></div>
+        </div>
+        <!--4列广告-->
+        <ul class="custom-nav-4 clearfix">
+            <li>
+                <a href="./list.html">
+                            <span class="nav-img-wap">
+                    <img class="js-lazy"
+                         data-src="http://imgqn.koudaitong.com/upload_files/2015/03/24/Fq_HOTMiU8ITuId7gJis4SdNqj4B.png!140x140+2x.jpg"
+                         src="http://imgqn.koudaitong.com/upload_files/2015/03/24/Fq_HOTMiU8ITuId7gJis4SdNqj4B.png?imageView2/2/w/280/h/280/q/90/format/webp"
+                         style="display: inline;">
+                </span>
+                    <span class="title">精神食粮</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="http://wap.koudaitong.com/v2/tag/65s6owbi">
+                            <span class="nav-img-wap">
+                    <img class="js-lazy"
+                         data-src="http://imgqn.koudaitong.com/upload_files/2015/03/23/FlDZRCBXd09x296bUDGlEPDg1tFS.png!140x140+2x.jpg"
+                         src="http://imgqn.koudaitong.com/upload_files/2015/03/23/FlDZRCBXd09x296bUDGlEPDg1tFS.png?imageView2/2/w/280/h/280/q/90/format/webp"
+                         style="display: inline;">
+                </span>
+                    <span class="title">生存处方</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="http://wap.koudaitong.com/v2/tag/15u6sp7qn">
+                            <span class="nav-img-wap">
+                    <img class="js-lazy"
+                         data-src="http://imgqn.koudaitong.com/upload_files/2015/03/17/Fv4ASXx71wY0gm0_g3UIK0tDhuZ8.png!140x140+2x.jpg"
+                         src="http://imgqn.koudaitong.com/upload_files/2015/03/17/Fv4ASXx71wY0gm0_g3UIK0tDhuZ8.png?imageView2/2/w/280/h/280/q/90/format/webp"
+                         style="display: inline;">
+                </span>
+                    <span class="title">逼格工场</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="http://wap.koudaitong.com/v2/tag/1b919vplq">
+                            <span class="nav-img-wap">
+                    <img class="js-lazy"
+                         data-src="http://imgqn.koudaitong.com/upload_files/2015/03/17/FhEHo0Cd9pVlvd2PjX58ehY9GII9.png!140x140+2x.jpg"
+                         src="http://imgqn.koudaitong.com/upload_files/2015/03/17/FhEHo0Cd9pVlvd2PjX58ehY9GII9.png?imageView2/2/w/280/h/280/q/90/format/webp"
+                         style="display: inline;">
+                </span>
+                    <span class="title">吃货天堂</span>
+                </a>
+            </li>
+
+        </ul>
+        <div class="custom-image-swiper custom-image-swiper-single js-swp swp">
+            <div class="swiper-wrapper js-swp-wrap js-view-image-list" style="height: 75px;">
+                <a class="swp-page" href="http://wap.koudaitong.com/v2/showcase/tag?alias=rdhxmnjt" target="_blank">
+                    <img class=""
+                         src="http://imgqn.koudaitong.com/upload_files/2015/03/24/FiyOETjUzzsWhiLSvYag3kKLneoP.png!730x0.jpg">
+                </a>
+            </div>
+            <div class="swiper-pagination js-swiper-pagination"></div>
+        </div>
+        <ul class="custom-nav-4 clearfix">
+            <li>
+                <a href="http://wap.koudaitong.com/v2/feature/panz16sw">
+                            <span class="nav-img-wap">
+                    <img class="js-lazy"
+                         data-src="http://imgqn.koudaitong.com/upload_files/2015/03/24/FoEsQXfGc868ZYd_R1serCwml80c.png!140x140+2x.jpg"
+                         src="http://imgqn.koudaitong.com/upload_files/2015/03/24/FoEsQXfGc868ZYd_R1serCwml80c.png?imageView2/2/w/280/h/280/q/90/format/webp"
+                         style="display: inline;">
+                </span>
+                    <span class="title">老六</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="http://wap.koudaitong.com/v2/feature/1ac1mh6fk">
+                            <span class="nav-img-wap">
+                    <img class="js-lazy"
+                         data-src="http://imgqn.koudaitong.com/upload_files/2015/03/24/Frx3ewsLE0SdmmfWUDAHypo9JdBR.png!140x140+2x.jpg"
+                         src="http://imgqn.koudaitong.com/upload_files/2015/03/24/Frx3ewsLE0SdmmfWUDAHypo9JdBR.png?imageView2/2/w/280/h/280/q/90/format/webp"
+                         style="display: inline;">
+                </span>
+                    <span class="title">徐万波</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="http://wap.koudaitong.com/v2/feature/ol5qs4a4">
+                            <span class="nav-img-wap">
+                    <img class="js-lazy"
+                         data-src="http://imgqn.koudaitong.com/upload_files/2015/06/30/FiFeNnVmy0DZbrPFGIsMHBTDlvHw.jpg!140x140+2x.jpg"
+                         src="http://imgqn.koudaitong.com/upload_files/2015/06/30/FiFeNnVmy0DZbrPFGIsMHBTDlvHw.jpg?imageView2/2/w/280/h/280/q/90/format/webp"
+                         style="display: inline;">
+                </span>
+                    <span class="title">杨默</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="http://wap.koudaitong.com/v2/feature/1b9n64x45">
+                            <span class="nav-img-wap">
+                    <img class="js-lazy"
+                         data-src="http://imgqn.koudaitong.com/upload_files/2015/03/24/Fjax1LeqiAhG3DQWY-9-wJD4XwaT.png!140x140+2x.jpg"
+                         src="http://imgqn.koudaitong.com/upload_files/2015/03/24/Fjax1LeqiAhG3DQWY-9-wJD4XwaT.png?imageView2/2/w/280/h/280/q/90/format/webp"
+                         style="display: inline;">
+                </span>
+                    <span class="title">李倩</span>
+                </a>
+            </li>
+
+        </ul>
+        <div class="custom-image-swiper custom-image-swiper-single js-swp swp">
+            <div class="swiper-wrapper js-swp-wrap js-view-image-list" style="height: 61px;">
+                <a class="swp-page" href="http://wap.koudaitong.com/v2/showcase/tag?alias=2oy5955s" target="_blank">
+                    <img class=""
+                         src="http://imgqn.koudaitong.com/upload_files/2015/03/17/FhOfEanf7Z8adwLe3ox77Qm70gq1.png!730x0.jpg">
+                </a>
+            </div>
+            <div class="swiper-pagination js-swiper-pagination"></div>
+        </div>
+        <ul class="js-goods-list sc-goods-list pic clearfix size-1 " data-size="1" data-showtype="card"
+            style="visibility: visible;">
+
+
+            <!-- 商品区域 -->
+            <!-- 展现类型判断 -->
+
+
+            <li class="js-goods-card goods-card goods-list small-pic card ">
+                <a href="http://wap.koudaitong.com/v2/goods/ma60i7ks" class="js-goods link clearfix" target="_blank"
+                   data-goods-id="50806078" title="《天命不足畏》（上下册） 改革死在了谁手里？  ">
+                    <div class="photo-block" data-width="640" data-height="640"
+                         style="height: 164px; background-color: rgb(255, 255, 255);">
+                        <img class="goods-photo js-goods-lazy"
+                             data-src="http://imgqn.koudaitong.com/upload_files/2015/06/17/FtWQafX3yrts1fQ1J7lta5OAsGo6.jpg!140x140+2x.jpg"
+                             src="http://imgqn.koudaitong.com/upload_files/2015/06/17/FtWQafX3yrts1fQ1J7lta5OAsGo6.jpg?imageView2/2/w/280/h/280/q/90/format/webp"
+                             style="display: block;">
+                    </div>
+                    <div class="info clearfix info-title info-price btn1">
+                        <p class=" goods-title ">《天命不足畏》（上下册） 改革死在了谁手里？ </p>
+
+                        <p class="goods-sub-title c-black hide">罗辑思维又为您选了一本好书，耶</p>
+
+                        <p class="goods-price">
+                            <em>￥59.00</em>
+                        </p>
+
+                        <p class="goods-price-taobao  hide">淘价：</p>
+                    </div>
+                    <div class="goods-buy btn1 info-title">
+                    </div>
+                    <div class="js-goods-buy buy-response" data-alias="ma60i7ks" data-postage="0" data-buyway="1"
+                         data-id="50806078" data-title="《天命不足畏》（上下册） 改革死在了谁手里？  " data-price="59.00"
+                         data-isvirtual="0"></div>
+                </a>
+            </li>
+
+            <li class="js-goods-card goods-card goods-list small-pic card ">
+                <a href="http://wap.koudaitong.com/v2/goods/zig2pg1v" class="js-goods link clearfix" target="_blank"
+                   data-goods-id="54634372" title="《中国文学史》  钱穆大师的传世经典  ">
+                    <div class="photo-block" data-width="640" data-height="640"
+                         style="height: 164px; background-color: rgb(255, 255, 255);">
+                        <img class="goods-photo js-goods-lazy"
+                             data-src="http://imgqn.koudaitong.com/upload_files/2015/06/25/FjHGTZfUFS9A0bu_eaJoqVF58sST.jpg!140x140+2x.jpg"
+                             src="http://imgqn.koudaitong.com/upload_files/2015/06/25/FjHGTZfUFS9A0bu_eaJoqVF58sST.jpg?imageView2/2/w/280/h/280/q/90/format/webp"
+                             style="display: block;">
+                    </div>
+                    <div class="info clearfix info-title info-price btn1">
+                        <p class=" goods-title ">《中国文学史》 钱穆大师的传世经典 </p>
+
+                        <p class="goods-sub-title c-black hide">罗辑思维又为您选了一本好书，耶</p>
+
+                        <p class="goods-price">
+                            <em>￥48.00</em>
+                        </p>
+
+                        <p class="goods-price-taobao  hide">淘价：</p>
+                    </div>
+                    <div class="goods-buy btn1 info-title">
+                    </div>
+                    <div class="js-goods-buy buy-response" data-alias="zig2pg1v" data-postage="0" data-buyway="1"
+                         data-id="54634372" data-title="《中国文学史》  钱穆大师的传世经典  " data-price="48.00"
+                         data-isvirtual="0"></div>
+                </a>
+            </li>
+
+            <li class="js-goods-card goods-card goods-list small-pic card ">
+                <a href="http://wap.koudaitong.com/v2/goods/2xqa6g13" class="js-goods link clearfix" target="_blank"
+                   data-goods-id="55238000" title="【独家首发】猫哆哩堵嘴系列零食">
+                    <div class="photo-block" data-width="640" data-height="640"
+                         style="height: 164px; background-color: rgb(255, 255, 255);">
+                        <img class="goods-photo js-goods-lazy"
+                             data-src="http://imgqn.koudaitong.com/upload_files/2015/07/01/Fj2Gm4wUttfGmJS09BZy1Al340tg.jpg!140x140+2x.jpg"
+                             src="http://imgqn.koudaitong.com/upload_files/2015/07/01/Fj2Gm4wUttfGmJS09BZy1Al340tg.jpg?imageView2/2/w/280/h/280/q/90/format/webp"
+                             style="display: block;">
+                    </div>
+                    <div class="info clearfix info-title info-price btn1">
+                        <p class=" goods-title ">【独家首发】猫哆哩堵嘴系列零食</p>
+
+                        <p class="goods-sub-title c-black hide">如果有人在你身边说个不停……一盒猫哆哩，就能救你。</p>
+
+                        <p class="goods-price">
+                            <em>￥98.00</em>
+                        </p>
+
+                        <p class="goods-price-taobao  hide"></p>
+                    </div>
+                    <div class="goods-buy btn1 info-title">
+                    </div>
+                    <div class="js-goods-buy buy-response" data-alias="2xqa6g13" data-postage="0" data-buyway="1"
+                         data-id="55238000" data-title="【独家首发】猫哆哩堵嘴系列零食" data-price="98.00" data-isvirtual="0"></div>
+                </a>
+            </li>
+
+            <li class="js-goods-card goods-card goods-list small-pic card ">
+                <a href="http://wap.koudaitong.com/v2/goods/h24wwc4h" class="js-goods link clearfix" target="_blank"
+                   data-goods-id="41667943" title="一堂课，get√亲子沟通诀窍（杨杰公开课第3期）">
+                    <div class="photo-block" data-width="640" data-height="640"
+                         style="height: 164px; background-color: rgb(255, 255, 255);">
+                        <img class="goods-photo js-goods-lazy"
+                             data-src="http://imgqn.koudaitong.com/upload_files/2015/06/02/Fg9RXH6KTi2oXqXUB3oYsTG-Fnec.jpg!140x140+2x.jpg"
+                             src="http://imgqn.koudaitong.com/upload_files/2015/06/02/Fg9RXH6KTi2oXqXUB3oYsTG-Fnec.jpg?imageView2/2/w/280/h/280/q/90/format/webp"
+                             style="display: block;">
+                    </div>
+                    <div class="info clearfix info-title info-price btn1">
+                        <p class=" goods-title ">一堂课，get√亲子沟通诀窍（杨杰公开课第3期）</p>
+
+                        <p class="goods-sub-title c-black hide">独立亲子咨询师杨杰首开亲子教育公开课，传授亲子沟通诀窍。</p>
+
+                        <p class="goods-price">
+                            <em>￥2400.00</em>
+                        </p>
+
+                        <p class="goods-price-taobao  hide"></p>
+                    </div>
+                    <div class="goods-buy btn1 info-title">
+                    </div>
+                    <div class="js-goods-buy buy-response" data-alias="h24wwc4h" data-postage="0" data-buyway="1"
+                         data-id="41667943" data-title="一堂课，get√亲子沟通诀窍（杨杰公开课第3期）" data-price="2400.00"
+                         data-isvirtual="0"></div>
+                </a>
+            </li>
+
+        </ul>
+        <!-- 图片广告 -->
+        <div class="custom-image-swiper custom-image-swiper-single js-swp swp">
+            <div class="swiper-wrapper js-swp-wrap js-view-image-list" style="height: 61px;">
+                <a class="swp-page" href="http://wap.koudaitong.com/v2/showcase/tag?alias=xx6xvpc0" target="_blank">
+                    <img class=""
+                         src="http://imgqn.koudaitong.com/upload_files/2015/03/17/FlP7HpTP9Qp0WSehld8Jk3kWRvXL.png!730x0.jpg">
+                </a>
+            </div>
+            <div class="swiper-pagination js-swiper-pagination"></div>
+        </div>
+
+        <ul class="js-goods-list sc-goods-list pic clearfix size-1 " data-size="1" data-showtype="card"
+            style="visibility: visible;">
+
+
+            <!-- 商品区域 -->
+            <!-- 展现类型判断 -->
+
+
+            <li class="js-goods-card goods-card goods-list small-pic card ">
+                <a href="http://wap.koudaitong.com/v2/goods/1atxk33hr" class="js-goods link clearfix" target="_blank"
+                   data-goods-id="46613149" title="《爱因斯坦传》（上下册）  我们与天才的一线之隔">
+                    <div class="photo-block" data-width="640" data-height="640"
+                         style="height: 164px; background-color: rgb(255, 255, 255);">
+                        <img class="goods-photo js-goods-lazy"
+                             data-src="http://imgqn.koudaitong.com/upload_files/2015/06/10/Fvax-WLLgs_hYPHcpEou_215M8qa.jpg!140x140+2x.jpg"
+                             src="http://imgqn.koudaitong.com/upload_files/2015/06/10/Fvax-WLLgs_hYPHcpEou_215M8qa.jpg?imageView2/2/w/280/h/280/q/90/format/webp"
+                             style="display: block;">
+                    </div>
+                    <div class="info clearfix info-title info-price btn1">
+                        <p class=" goods-title ">《爱因斯坦传》（上下册） 我们与天才的一线之隔</p>
+
+                        <p class="goods-sub-title c-black hide">罗辑思维又为您选了一本好书，耶</p>
+
+                        <p class="goods-price">
+                            <em>￥69.00</em>
+                        </p>
+
+                        <p class="goods-price-taobao  hide">淘价：</p>
+                    </div>
+                    <div class="goods-buy btn1 info-title">
+                    </div>
+                    <div class="js-goods-buy buy-response" data-alias="1atxk33hr" data-postage="0" data-buyway="1"
+                         data-id="46613149" data-title="《爱因斯坦传》（上下册）  我们与天才的一线之隔" data-price="69.00"
+                         data-isvirtual="0"></div>
+                </a>
+            </li>
+
+            <li class="js-goods-card goods-card goods-list small-pic card ">
+                <a href="http://wap.koudaitong.com/v2/goods/7qizhwci" class="js-goods link clearfix" target="_blank"
+                   data-goods-id="30877885" title="《逍遥游》 你，认识庄子吗">
+                    <div class="photo-block" data-width="640" data-height="640"
+                         style="height: 164px; background-color: rgb(255, 255, 255);">
+                        <img class="goods-photo js-goods-lazy"
+                             data-src="http://imgqn.koudaitong.com/upload_files/2015/05/08/FhoGALeMALYLYdKdtDDq6cJHDI-O.jpg!140x140+2x.jpg"
+                             src="http://imgqn.koudaitong.com/upload_files/2015/05/08/FhoGALeMALYLYdKdtDDq6cJHDI-O.jpg?imageView2/2/w/280/h/280/q/90/format/webp"
+                             style="display: block;">
+                    </div>
+                    <div class="info clearfix info-title info-price btn1">
+                        <p class=" goods-title ">《逍遥游》 你，认识庄子吗</p>
+
+                        <p class="goods-sub-title c-black hide">你要什么样的潇洒与自由</p>
+
+                        <p class="goods-price">
+                            <em>￥45.00</em>
+                        </p>
+
+                        <p class="goods-price-taobao  hide">淘价：</p>
+                    </div>
+                    <div class="goods-buy btn1 info-title">
+                    </div>
+                    <div class="js-goods-buy buy-response" data-alias="7qizhwci" data-postage="0" data-buyway="1"
+                         data-id="30877885" data-title="《逍遥游》 你，认识庄子吗" data-price="45.00" data-isvirtual="0"></div>
+                </a>
+            </li>
+
+            <li class="js-goods-card goods-card goods-list small-pic card ">
+                <a href="http://wap.koudaitong.com/v2/goods/ngwqviio" class="js-goods link clearfix" target="_blank"
+                   data-goods-id="58450428" title="《光电帝国》  一部书帮你躲过事业路上那些坑">
+                    <div class="photo-block" data-width="640" data-height="640"
+                         style="height: 164px; background-color: rgb(255, 255, 255);">
+                        <img class="goods-photo js-goods-lazy"
+                             data-src="http://imgqn.koudaitong.com/upload_files/2015/07/02/FlNmVy5T-Jv-Q9WKh3a7DNZjqOjs.jpg!140x140+2x.jpg"
+                             src="http://imgqn.koudaitong.com/upload_files/2015/07/02/FlNmVy5T-Jv-Q9WKh3a7DNZjqOjs.jpg?imageView2/2/w/280/h/280/q/90/format/webp"
+                             style="display: block;">
+                    </div>
+                    <div class="info clearfix info-title info-price btn1">
+                        <p class=" goods-title ">《光电帝国》 一部书帮你躲过事业路上那些坑</p>
+
+                        <p class="goods-sub-title c-black hide">罗辑思维又为您选了一本好书，耶</p>
+
+                        <p class="goods-price">
+                            <em>￥52.00</em>
+                        </p>
+
+                        <p class="goods-price-taobao  hide">淘价：</p>
+                    </div>
+                    <div class="goods-buy btn1 info-title">
+                    </div>
+                    <div class="js-goods-buy buy-response" data-alias="ngwqviio" data-postage="0" data-buyway="1"
+                         data-id="58450428" data-title="《光电帝国》  一部书帮你躲过事业路上那些坑" data-price="52.00"
+                         data-isvirtual="0"></div>
+                </a>
+            </li>
+
+            <li class="js-goods-card goods-card goods-list small-pic card ">
+                <a href="http://wap.koudaitong.com/v2/goods/h3qzkzgt" class="js-goods link clearfix" target="_blank"
+                   data-goods-id="9814281" title="《金雀花王朝》  一部红遍英美的英国史">
+                    <div class="photo-block" data-width="640" data-height="640"
+                         style="height: 164px; background-color: rgb(255, 255, 255);">
+                        <img class="goods-photo js-goods-lazy"
+                             data-src="http://imgqn.koudaitong.com/upload_files/2015/05/27/FlOoQ5-bDFPACJG6Z21_l0V43nAJ.jpg!140x140+2x.jpg"
+                             src="http://imgqn.koudaitong.com/upload_files/2015/05/27/FlOoQ5-bDFPACJG6Z21_l0V43nAJ.jpg?imageView2/2/w/280/h/280/q/90/format/webp"
+                             style="display: block;">
+                    </div>
+                    <div class="info clearfix info-title info-price btn1">
+                        <p class=" goods-title ">《金雀花王朝》 一部红遍英美的英国史</p>
+
+                        <p class="goods-sub-title c-black hide">读懂英国史，才能真正读懂现代社会。</p>
+
+                        <p class="goods-price">
+                            <em>￥68.00</em>
+                        </p>
+
+                        <p class="goods-price-taobao  hide">淘价：</p>
+                    </div>
+                    <div class="goods-buy btn1 info-title">
+                    </div>
+                    <div class="js-goods-buy buy-response" data-alias="h3qzkzgt" data-postage="0" data-buyway="1"
+                         data-id="9814281" data-title="《金雀花王朝》  一部红遍英美的英国史" data-price="68.00" data-isvirtual="0"></div>
+                </a>
+            </li>
+
+        </ul>
+        <!-- 图片广告 -->
+        <div class="custom-image-swiper custom-image-swiper-single js-swp swp">
+            <div class="swiper-wrapper js-swp-wrap js-view-image-list" style="height: 61px;">
+                <a class="swp-page" href="http://wap.koudaitong.com/v2/showcase/tag?alias=65s6owbi" target="_blank">
+                    <img class=""
+                         src="http://imgqn.koudaitong.com/upload_files/2015/03/23/Fg9PDnPOdPy6GlLpBpZ2W8PWvmIq.png!730x0.jpg">
+                </a>
+            </div>
+            <div class="swiper-pagination js-swiper-pagination"></div>
+        </div>
+        <ul class="js-goods-list sc-goods-list pic clearfix size-1 " data-size="1" data-showtype="card"
+            style="visibility: visible;">
+
+
+            <!-- 商品区域 -->
+            <!-- 展现类型判断 -->
+
+
+            <li class="js-goods-card goods-card goods-list small-pic card ">
+                <a href="http://wap.koudaitong.com/v2/goods/1debkg3br" class="js-goods link clearfix" target="_blank"
+                   data-goods-id="60876308" title="极客公园“奇点·创新者峰会”开放论坛门票">
+                    <div class="photo-block" data-width="640" data-height="640"
+                         style="height: 164px; background-color: rgb(255, 255, 255);">
+                        <img class="goods-photo js-goods-lazy"
+                             data-src="http://imgqn.koudaitong.com/upload_files/2015/07/03/FsdToZ5dnYAMgnki5qeGBCrSjgOG.jpg!140x140+2x.jpg"
+                             src="http://imgqn.koudaitong.com/upload_files/2015/07/03/FsdToZ5dnYAMgnki5qeGBCrSjgOG.jpg?imageView2/2/w/280/h/280/q/90/format/webp"
+                             style="display: block;">
+                    </div>
+                    <div class="info clearfix info-title info-price btn1">
+                        <p class=" goods-title ">极客公园“奇点·创新者峰会”开放论坛门票</p>
+
+                        <p class="goods-sub-title c-black hide">极客公园“奇点·创新者峰会”，遇见改变未来的技术、资本和人。</p>
+
+                        <p class="goods-price">
+                            <em>￥699.00</em>
+                        </p>
+
+                        <p class="goods-price-taobao  hide"></p>
+                    </div>
+                    <div class="goods-buy btn1 info-title">
+                    </div>
+                    <div class="js-goods-buy buy-response" data-alias="1debkg3br" data-postage="0" data-buyway="1"
+                         data-id="60876308" data-title="极客公园“奇点·创新者峰会”开放论坛门票" data-price="699.00"
+                         data-isvirtual="0"></div>
+                </a>
+            </li>
+
+            <li class="js-goods-card goods-card goods-list small-pic card ">
+                <a href="http://wap.koudaitong.com/v2/goods/1i0wq41uz" class="js-goods link clearfix" target="_blank"
+                   data-goods-id="50902725" title="儿童戏剧创艺营：边玩边学，快乐暑期">
+                    <div class="photo-block" data-width="640" data-height="640"
+                         style="height: 164px; background-color: rgb(255, 255, 255);">
+                        <img class="goods-photo js-goods-lazy"
+                             data-src="http://imgqn.koudaitong.com/upload_files/2015/06/19/FsR6H3CWSisNm1JF_CXygDdOKFck.jpg!140x140+2x.jpg"
+                             src="http://imgqn.koudaitong.com/upload_files/2015/06/19/FsR6H3CWSisNm1JF_CXygDdOKFck.jpg?imageView2/2/w/280/h/280/q/90/format/webp"
+                             style="display: block;">
+                    </div>
+                    <div class="info clearfix info-title info-price btn1">
+                        <p class=" goods-title ">儿童戏剧创艺营：边玩边学，快乐暑期</p>
+
+                        <p class="goods-sub-title c-black hide">这一次，让你的孩子过一个释放天性，边玩边学的充实暑假。</p>
+
+                        <p class="goods-price">
+                            <em>￥8500.00</em>
+                        </p>
+
+                        <p class="goods-price-taobao  hide"></p>
+                    </div>
+                    <div class="goods-buy btn1 info-title">
+                    </div>
+                    <div class="js-goods-buy buy-response" data-alias="1i0wq41uz" data-postage="0" data-buyway="1"
+                         data-id="50902725" data-title="儿童戏剧创艺营：边玩边学，快乐暑期" data-price="8500.00"
+                         data-isvirtual="0"></div>
+                </a>
+            </li>
+
+        </ul>
+        <div class="custom-image-swiper custom-image-swiper-single js-swp swp">
+            <div class="swiper-wrapper js-swp-wrap js-view-image-list" style="height: 61px;">
+                <a class="swp-page" href="http://wap.koudaitong.com/v2/showcase/tag?alias=15u6sp7qn" target="_blank">
+                    <img class="" src="http://imgqn.koudaitong.com/upload_files/2015/03/17/FvHZxnPjYh2VlquoKRUCG3HxN8gp.png!730x0.jpg">
+                </a>
+            </div>
+            <div class="swiper-pagination js-swiper-pagination"></div>
+        </div>
+        <ul class="js-goods-list sc-goods-list pic clearfix size-1 " data-size="1" data-showtype="card" style="visibility: visible;">
+
+
+            <!-- 商品区域 -->
+            <!-- 展现类型判断 -->
+
+
+
+            <li class="js-goods-card goods-card goods-list small-pic card ">
+                <a href="http://wap.koudaitong.com/v2/goods/1gprx7btt" class="js-goods link clearfix" target="_blank" data-goods-id="59282488" title="刘冰野限量原创手工版画《花与鳄鱼》">
+                    <div class="photo-block" data-width="640" data-height="640" style="height: 164px; background-color: rgb(255, 255, 255);">
+                        <img class="goods-photo js-goods-lazy" data-src="http://imgqn.koudaitong.com/upload_files/2015/07/03/Frk9sA_hQDbG4_IouUw5CjI4qrey.jpg!140x140+2x.jpg" src="http://imgqn.koudaitong.com/upload_files/2015/07/03/Frk9sA_hQDbG4_IouUw5CjI4qrey.jpg?imageView2/2/w/280/h/280/q/90/format/webp" style="display: block;">
+                    </div>
+                    <div class="info clearfix info-title info-price btn1">
+                        <p class=" goods-title ">刘冰野限量原创手工版画《花与鳄鱼》</p>
+                        <p class="goods-sub-title c-black hide">戳此下单，愿你的人生，鲜花绽放。
+                        </p>
+                        <p class="goods-price">
+                            <em>￥1380.00</em>
+                        </p>
+                        <p class="goods-price-taobao  hide">淘价：</p>
+                    </div>
+                    <div class="goods-buy btn1 info-title">
+                    </div>
+                    <div class="js-goods-buy buy-response" data-alias="1gprx7btt" data-postage="0" data-buyway="1" data-id="59282488" data-title="刘冰野限量原创手工版画《花与鳄鱼》" data-price="1380.00" data-isvirtual="0"></div>
+                </a>
+            </li>
+
+            <li class="js-goods-card goods-card goods-list small-pic card ">
+                <a href="http://wap.koudaitong.com/v2/goods/u05kwlnc" class="js-goods link clearfix" target="_blank" data-goods-id="58197340" title="刘冰野限量原创手工版画《刺猬》">
+                    <div class="photo-block" data-width="640" data-height="640" style="height: 164px; background-color: rgb(255, 255, 255);">
+                        <img class="goods-photo js-goods-lazy" data-src="http://imgqn.koudaitong.com/upload_files/2015/07/02/Fos05YXjGZDi3slD0Gigh0VqApW6.jpg!140x140+2x.jpg" src="http://imgqn.koudaitong.com/upload_files/2015/07/02/Fos05YXjGZDi3slD0Gigh0VqApW6.jpg?imageView2/2/w/280/h/280/q/90/format/webp" style="display: block;">
+                    </div>
+                    <div class="info clearfix info-title info-price btn1">
+                        <p class=" goods-title ">刘冰野限量原创手工版画《刺猬》</p>
+                        <p class="goods-sub-title c-black hide">戳此下单，愿你的人生，丰盛而美满。
+                        </p>
+                        <p class="goods-price">
+                            <em>￥1380.00</em>
+                        </p>
+                        <p class="goods-price-taobao  hide">淘价：</p>
+                    </div>
+                    <div class="goods-buy btn1 info-title">
+                    </div>
+                    <div class="js-goods-buy buy-response" data-alias="u05kwlnc" data-postage="0" data-buyway="1" data-id="58197340" data-title="刘冰野限量原创手工版画《刺猬》" data-price="1380.00" data-isvirtual="0"></div>
+                </a>
+            </li>
+
+            <li class="js-goods-card goods-card goods-list small-pic card ">
+                <a href="http://wap.koudaitong.com/v2/goods/7929htb" class="js-goods link clearfix" target="_blank" data-goods-id="51478434" title="孙浩限量签名版画《马的肖像》">
+                    <div class="photo-block" data-width="640" data-height="640" style="height: 164px; background-color: rgb(255, 255, 255);">
+                        <img class="goods-photo js-goods-lazy" data-src="http://imgqn.koudaitong.com/upload_files/2015/06/18/FgTR95qq_tUVdzhaTy6gqZA0EUyh.jpg!140x140+2x.jpg" src="http://imgqn.koudaitong.com/upload_files/2015/06/18/FgTR95qq_tUVdzhaTy6gqZA0EUyh.jpg?imageView2/2/w/280/h/280/q/90/format/webp" style="display: block;">
+                    </div>
+                    <div class="info clearfix info-title info-price btn1">
+                        <p class=" goods-title ">孙浩限量签名版画《马的肖像》</p>
+                        <p class="goods-sub-title c-black hide">骏马配英雄，祝福马到功成。</p>
+                        <p class="goods-price">
+                            <em>￥3680.00</em>
+                        </p>
+                        <p class="goods-price-taobao  hide">淘价：</p>
+                    </div>
+                    <div class="goods-buy btn1 info-title">
+                    </div>
+                    <div class="js-goods-buy buy-response" data-alias="7929htb" data-postage="0" data-buyway="1" data-id="51478434" data-title="孙浩限量签名版画《马的肖像》" data-price="3680.00" data-isvirtual="0"></div>
+                </a>
+            </li>
+
+            <li class="js-goods-card goods-card goods-list small-pic card ">
+                <a href="http://wap.koudaitong.com/v2/goods/4iolc58s" class="js-goods link clearfix" target="_blank" data-goods-id="59311883" title="自愚自乐Ⅳ">
+                    <div class="photo-block" data-width="640" data-height="640" style="height: 164px; background-color: rgb(255, 255, 255);">
+                        <img class="goods-photo js-goods-lazy" data-src="http://imgqn.koudaitong.com/upload_files/2015/07/03/FqGYjtMvdr0AHo5ghKobKXpEuJDn.jpg!140x140+2x.jpg" src="http://imgqn.koudaitong.com/upload_files/2015/07/03/FqGYjtMvdr0AHo5ghKobKXpEuJDn.jpg?imageView2/2/w/280/h/280/q/90/format/webp" style="display: block;">
+                    </div>
+                    <div class="info clearfix info-title info-price btn1">
+                        <p class=" goods-title ">自愚自乐Ⅳ</p>
+                        <p class="goods-sub-title c-black hide">《自愚自乐》，献给品位独特的你
+                        </p>
+                        <p class="goods-price">
+                            <em>￥3800.00</em>
+                        </p>
+                        <p class="goods-price-taobao  hide">淘价：</p>
+                    </div>
+                    <div class="goods-buy btn1 info-title">
+                    </div>
+                    <div class="js-goods-buy buy-response" data-alias="4iolc58s" data-postage="0" data-buyway="1" data-id="59311883" data-title="自愚自乐Ⅳ" data-price="3800.00" data-isvirtual="0"></div>
+                </a>
+            </li>
+
+        </ul>
+        <div class="custom-image-swiper custom-image-swiper-single js-swp swp">
+            <div class="swiper-wrapper js-swp-wrap js-view-image-list" style="height: 61px;">
+                <a class="swp-page" href="http://wap.koudaitong.com/v2/showcase/tag?alias=1b919vplq" target="_blank">
+                    <img class="" src="http://imgqn.koudaitong.com/upload_files/2015/03/17/FhRip9Y6CgwWmswHwX8RiB8AYjXB.png!730x0.jpg">
+                </a>
+            </div>
+            <div class="swiper-pagination js-swiper-pagination"></div>
+        </div>
+        <ul class="js-goods-list sc-goods-list pic clearfix size-1 " data-size="1" data-showtype="card" style="visibility: visible;">
+
+
+            <!-- 商品区域 -->
+            <!-- 展现类型判断 -->
+
+            <li class="js-goods-card goods-card goods-list small-pic card ">
+                <a href="http://wap.koudaitong.com/v2/goods/2xqa6g13" class="js-goods link clearfix" target="_blank" data-goods-id="55238000" title="【独家首发】猫哆哩堵嘴系列零食">
+                    <div class="photo-block" data-width="640" data-height="640" style="height: 164px; background-color: rgb(255, 255, 255);">
+                        <img class="goods-photo js-goods-lazy" data-src="http://imgqn.koudaitong.com/upload_files/2015/07/01/Fj2Gm4wUttfGmJS09BZy1Al340tg.jpg!140x140+2x.jpg" src="http://imgqn.koudaitong.com/upload_files/2015/07/01/Fj2Gm4wUttfGmJS09BZy1Al340tg.jpg?imageView2/2/w/280/h/280/q/90/format/webp" style="display: block;">
+                    </div>
+                    <div class="info clearfix info-title info-price btn1">
+                        <p class=" goods-title ">【独家首发】猫哆哩堵嘴系列零食</p>
+                        <p class="goods-sub-title c-black hide">如果有人在你身边说个不停……一盒猫哆哩，就能救你。</p>
+                        <p class="goods-price">
+                            <em>￥98.00</em>
+                        </p>
+                        <p class="goods-price-taobao  hide"></p>
+                    </div>
+                    <div class="goods-buy btn1 info-title">
+                    </div>
+                    <div class="js-goods-buy buy-response" data-alias="2xqa6g13" data-postage="0" data-buyway="1" data-id="55238000" data-title="【独家首发】猫哆哩堵嘴系列零食" data-price="98.00" data-isvirtual="0"></div>
+                </a>
+            </li>
+
+            <li class="js-goods-card goods-card goods-list small-pic card ">
+                <a href="http://wap.koudaitong.com/v2/goods/xudg5zqt" class="js-goods link clearfix" target="_blank" data-goods-id="9377230" title="米大叔的好大米">
+                    <div class="photo-block" data-width="640" data-height="640" style="height: 164px; background-color: rgb(255, 255, 255);">
+                        <img class="goods-photo js-goods-lazy" data-src="http://imgqn.koudaitong.com/upload_files/2015/03/08/FmzqhsUJGwUi9DmknFqi6qaMZCtM.jpg!140x140+2x.jpg" src="http://imgqn.koudaitong.com/upload_files/2015/03/08/FmzqhsUJGwUi9DmknFqi6qaMZCtM.jpg?imageView2/2/w/280/h/280/q/90/format/webp" style="display: block;">
+                    </div>
+                    <div class="info clearfix info-title info-price btn1">
+                        <p class=" goods-title ">米大叔的好大米</p>
+                        <p class="goods-sub-title c-black hide">米大叔好大米，专为罗辑思维独家定制。米有限，情无价。</p>
+                        <p class="goods-price">
+                            <em>￥128.00</em>
+                        </p>
+                        <p class="goods-price-taobao  hide">淘价：</p>
+                    </div>
+                    <div class="goods-buy btn1 info-title">
+                    </div>
+                    <div class="js-goods-buy buy-response" data-alias="xudg5zqt" data-postage="0" data-buyway="1" data-id="9377230" data-title="米大叔的好大米" data-price="128.00" data-isvirtual="0"></div>
+                </a>
+            </li>
+
+        </ul>
+        <div class="custom-image-swiper custom-image-swiper-single js-swp swp">
+            <div class="swiper-wrapper js-swp-wrap js-view-image-list" style="height: 61px;">
+                <a class="swp-page" href="javascript:void(0);" target="_blank">
+                    <img class="js-view-image-item" src="http://imgqn.koudaitong.com/upload_files/2015/03/17/FsEcBnZ8xhtA8GYzeZ878HoG8_Zh.png!730x0.jpg">
+                </a>
+            </div>
+            <div class="swiper-pagination js-swiper-pagination"></div>
+        </div>
+        <div class="custom-image-swiper custom-image-swiper-single js-swp swp">
+            <div class="swiper-wrapper js-swp-wrap js-view-image-list" style="height: 810px;">
+                <a class="swp-page" href="javascript:void(0);" target="_blank">
+                    <img class="js-view-image-item" src="http://imgqn.koudaitong.com/upload_files/2015/04/30/FucQ76gfdnPMTiCPfRZjkSzACRRK.jpg!730x0.jpg">
+                </a>
+            </div>
+            <div class="swiper-pagination js-swiper-pagination"></div>
+        </div>
+        <div class="custom-image-swiper custom-image-swiper-single js-swp swp">
+            <div class="swiper-wrapper js-swp-wrap js-view-image-list" style="height: 169px;">
+                <a class="swp-page" href="javascript:void(0);" target="_blank">
+                    <img class="js-view-image-item" src="http://imgqn.koudaitong.com/upload_files/2015/03/26/Fnn3TSpaHW8pvWtU7l1Pqbdu2d7P.jpg!730x0.jpg">
+                </a>
+            </div>
+            <div class="swiper-pagination js-swiper-pagination"></div>
+        </div>
+        <div class="js-footer" style="min-height: 1px;">
+            <!-- <textarea id="footer-delay" style="display:none;"> -->
+
+
+            <div class="footer">
+                <div class="copyright">
+                    <div class="ft-links">
+                        <a href="http://wap.koudaitong.com/v2/showcase/homepage?kdt_id=54023" target="_blank">店铺主页</a>
+                        <a href="http://wap.koudaitong.com/v2/showcase/usercenter?kdt_id=54023" target="_blank">会员中心</a>
+                        <a href="javascript:;" class="js-open-follow">关注我们</a>
+                    </div>
+                    <div class="ft-copyright">
+                        <a href="http://youzan.com" target="_blank">有赞微商城提供技术支持</a>
+                    </div>
+                </div>
+            </div>
+            <!-- </textarea> -->
+        </div>
+    </div>
+    <div class="content-sidebar">
+        <a href="http://wap.koudaitong.com/v2/showcase/homepage?kdt_id=54023" class="link">
+            <div class="sidebar-section shop-card">
+                <div class="table-cell">
+                    <img src="http://imgqn.koudaitong.com/upload_files/2015/01/26/FoX21i8VqwlCwjyDW618p66vd7g8.png!60x60+2x.jpg" width="60" height="60" class="shop-img" alt="公众号头像">
+                </div>
+                <div class="table-cell">
+                    <p class="shop-name">
+                        罗辑思维	                        		                        </p>
+                </div>
+            </div>
+        </a>
+        <div class="sidebar-section shop-info">
+            <div class="section-detail">
+
+                <p class="text-center weixin-title">微信“扫一扫”立即关注</p>
+                <div class="text-center qr-code">
+                    <img width="158" height="158" src="http://open.weixin.qq.com/qr/code/?username=luojisw"></div>
+                <p class="text-center weixin-no">微信号：luojisw</p>
+            </div>
+        </div>
+    </div>
+    <div class="nav-menu">
+        <div class="js-navmenu js-footer-auto-ele shop-nav nav-menu nav-menu-1 has-menu-3">
+            <div class="nav-special-item nav-item">
+                <a href="http://wap.koudaitong.com/v2/showcase/homepage?kdt_id=54023" class="home">主页</a>
+            </div>
+            <div class="nav-item">
+                <a class="mainmenu js-mainmenu" href="http://wap.koudaitong.com/v2/allgoods/54023?spm=f2229922">
+                    <span class="mainmenu-txt">全部商品</span>
+                </a>
+                <!-- 子菜单 -->
+            </div>
+            <div class="nav-item">
+                <a class="mainmenu js-mainmenu" href="http://wap.koudaitong.com/v2/tag/3bzv8ddu">
+                    <span class="mainmenu-txt">最新商品</span>
+                </a>
+                <!-- 子菜单 -->
+            </div>
+            <div class="nav-item">
+                <a class="mainmenu js-mainmenu" href="http://wap.koudaitong.com/v2/usercenter/jtp1e5q3">
+                    <span class="mainmenu-txt">我的订单</span>
+                </a>
+                <!-- 子菜单 -->
+            </div>
+        </div>
+    </div>
+</div>
+<main>
+</main>
+</body>
+</html>

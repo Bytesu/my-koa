@@ -31,10 +31,17 @@ var swPrecache = require('sw-precache');
 var fs = require('fs');
 var path = require('path');
 var packageJson = require('./package.json');
+var _path  = {
+    js:{
+        src:['./**/*.js','!./node_modules','!./labs','!./dist']
+    },
+    css:{
 
+    }
+};
 // Lint JavaScript
 gulp.task('jshint', function () {
-    return gulp.src('app/scripts/**/*.js')
+    return gulp.src(_path.js.src)
         .pipe(reload({stream: true, once: true}))
         .pipe($.jshint())
         .pipe($.jshint.reporter('jshint-stylish'))
@@ -120,7 +127,7 @@ gulp.task('scripts', function () {
 
 // Scan your HTML for assets & optimize them
 gulp.task('html', function () {
-    var assets = $.useref.assets({searchPath: '{.tmp,app}'});
+    var assets = $.useref.assets({searchPath: '{.tmp,app,express}'});
 
     return gulp.src(['app/**/**/*.html','express/views/**/*.html'])
         .pipe(assets)
@@ -159,11 +166,12 @@ gulp.task('serve', ['styles'], function () {
     browserSync({
         notify: false,
         // Customize the BrowserSync console logging prefix
-        logPrefix: 'WSK',
+        logPrefix: 'BrowserSync',
         // Run as an https by uncommenting 'https: true'
         // Note: this uses an unsigned certificate which on first access
         //       will present a certificate warning in the browser.
         // https: true,
+        //proxy:'byte.com'
         middleware: [require('./'+packageJson.main)],
         server: ['.tmp', 'app']
     });
@@ -171,6 +179,7 @@ gulp.task('serve', ['styles'], function () {
     gulp.watch(['app/**/*.html','express/views/**/*.html'], reload);
     gulp.watch(['app/styles/**/*.{scss,css}'], ['styles', reload]);
     gulp.watch(['app/scripts/**/*.js'], ['jshint']);
+    gulp.watch(['express/**/*.js'], reload);
     gulp.watch(['app/images/**/*'], reload);
 });
 
@@ -178,7 +187,7 @@ gulp.task('serve', ['styles'], function () {
 gulp.task('serve:dist', ['default'], function () {
     browserSync({
         notify: false,
-        logPrefix: 'WSK',
+        logPrefix: 'BrowserSync',
         // Run as an https by uncommenting 'https: true'
         // Note: this uses an unsigned certificate which on first access
         //       will present a certificate warning in the browser.

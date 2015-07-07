@@ -1,8 +1,15 @@
 /**
  * Created by byte_ on 2015/7/6.
  */
+
+
+function Random (){}
+
+Random.prototype.random1 = function(){
+    return Math.random().toString(36).substr(2, 15);
+}
+Random.prototype.random2 = function(len){
     var test = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678';
-var Random = function(len){
     len = len?len:32;
     var pwd = '';
     var maxPos = test.length;
@@ -12,4 +19,4 @@ var Random = function(len){
     console.log(pwd)
     return pwd;
 }
-Random();
+new Random().random1();

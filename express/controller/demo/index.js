@@ -28,9 +28,9 @@ Demo.prototype.test = function (req, res, next) {
   //  req.session.views = n++;
     console.log('--------------------here');
     //console.log('req.session.views--'+req.session.views);
-   // res.render('index');
+    //res.render('index');
 
-    res.json({
+   res.json({
         firstName: 'Mohandas'
         , lastName: 'Gandhi'
         , aliases: [{
