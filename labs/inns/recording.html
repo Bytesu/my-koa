@@ -42,6 +42,10 @@
             left: 18px;
             font-size: 20px;
         }
+        .seconds-android{
+            top: 377px;
+            left: 40%;
+        }
     </style>
     <script src="./scripts/utils.js"></script>
     <title>通话界面</title>
@@ -64,9 +68,11 @@
 <script>
     (function () {
         var querySelector = document.querySelector.bind(document);
-
+        if (getSingle().isAndroid()) {
+           querySelector('.seconds').classList.add('seconds-android');
+        }
         function setTime() {
-            var sec = 0, min = 0, msg = {sec:null,min:null};
+            var sec = 0, min = 0, msg = {sec: null, min: null};
             setInterval(function () {
                 sec++;
                 if (sec < 10) {
@@ -74,15 +80,16 @@
                 } else if (sec > 59) {
                     sec = 0;
                     min++;
-                }else{
+                } else {
                     msg.sec = '';
                 }
-                msg.min = min < 10?'0':'';
+                msg.min = min < 10 ? '0' : '';
                 msg.sec += sec;
                 msg.min += min;
 
-                querySelector('.seconds').innerHTML = msg.min+' : '+msg.sec;
+                querySelector('.seconds').innerHTML = msg.min + ' : ' + msg.sec;
             }, 1000);
+
         }
 
         setTime();

@@ -17,7 +17,7 @@ var config = {
       secret:util.randomStr(10)
     },
     path: {
-        _static: ["app", ".tmp"]//静态文件路径
+        _static: ["app", ".tmp",'labs']//静态文件路径
     }
 };
 module.exports = config;
