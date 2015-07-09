@@ -8,6 +8,8 @@ var data = {
     },
     setName: function(value) {
         this.name = value;
+
+
     }
 }
 console.log(data.name)

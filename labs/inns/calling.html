@@ -39,7 +39,7 @@
 <audio controls="controls" autoplay="true"  class="hide" loop="loop">
     <script>
         var imgPath = getSingle().isAndroid()?'Helium':'Opening';
-        window.document.write('<source src="./sound/'+imgPath+'.ogg"/>');
+        window.document.write('<source src="./sound/'+imgPath+'.mp3"/>');
     </script>
 
 </audio>
@@ -47,7 +47,6 @@
     (function(){
         document.addEventListener('DOMContentLoaded',{
             handleEvent:function(){
-
                 var querySelector = document.querySelector.bind(document);
                 var div_ = document.createElement('div');
                 var style = {
@@ -64,7 +63,7 @@
                     window.location.reload();
                 },false);
                 querySelector('img').style.width = window.innerWidth+'px';
-                querySelector('img').style.height = window.innerHeight+'px';
+                //querySelector('img').style.height = window.innerHeight+'px';
                 var div_right = div_.cloneNode(true);
                 div_right.style.right ='0px';
                 div_right.addEventListener('click',function(e){
