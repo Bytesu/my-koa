@@ -64,7 +64,6 @@
                 opacity: 1; /*结尾状态 透明度为1*/
             }
         }
-
         .fadeIn {
             -webkit-animation-name: fadeIn; /*动画名称*/
             -webkit-animation-duration: 2s; /*动画持续时间*/
@@ -97,7 +96,9 @@
 <body>
 <img src="./imgs/tips.png" class="tips tipFlag"/>
 <img src="./imgs/tips.png" class="tips2 tipFlag"/>
-
+<div class="btn1 btn hide"></div>
+<div class="btn2 btn hide"></div>
+<div class="btn3 btn hide"></div>
 <div class="ctner">
     <script>
         var imgPath = getSingle().isAndroid() ? 'android-' : '';
@@ -105,7 +106,7 @@
         window.document.write('<img title="' + path + '" class="bg"  src="./imgs/' + imgPath + 'desk.jpg" style="width:100%;"> ');
     </script>
     <audio controls="controls" class="hide">
-        <source src="./sound/msg-iphone.ogg"/>
+        <source src="./sound/msg-iphone.mp3"/>
     </audio>
     <div class="btn1 btn hide"></div>
     <div class="btn2 btn hide"></div>

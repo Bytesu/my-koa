@@ -12,6 +12,8 @@ console.log(app.get('env')+'------');
 //process.env.NODE_ENV = 'development';
 //
 [].map.call(config.path._static, function (val) {
+
+    console.log('val:'+val)
     app.use(express.static(val));
 });
 

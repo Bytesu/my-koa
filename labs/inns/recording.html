@@ -34,92 +34,475 @@
         div {
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         }
+        @-webkit-keyframes fadeIn {
+            0% {
+                opacity: 0; /*初始状态 透明度为0*/
+            }
+            50% {
+                opacity: 0.8; /*中间状态 透明度为0*/
+            }
+            100% {
+                opacity: 1; /*结尾状态 透明度为1*/
+            }
+        }
+        .fadeIn {
+            -webkit-animation-name: fadeIn; /*动画名称*/
+            -webkit-animation-duration: 2s; /*动画持续时间*/
+            -webkit-animation-iteration-count: 1; /*动画次数*/
+            -webkit-animation-delay: 0s; /*延迟时间*/
+        }
+        .btn{
+            width: 50%;
+            height: 40px;
+            z-index: 100;
+            position: absolute;
+            bottom: 147px;
+            left: 25%;z-index: 250;
+        }
+        .btn3{
+            bottom: 96px;
+            width: 25%;
+            left: 25%;
+        }
+        .btn2{
+            bottom: 96px;
+            width: 25%;
+            left: 50%;
+        }
+        .recording{
+            height:100%;margin:0 auto;display:block;
+        }
+        .recording-animate {
+            -webkit-animation-name: fadeOut;
+            -webkit-animation-duration: 0.5s;
+            -webkit-animation-iteration-count: 1;
+            -webkit-animation-delay: 0s;
 
+        }
         .seconds {
             position: absolute;
             top: 95px;
             color: white;
-            left: 18px;
+            left: 39px;
             font-size: 20px;
+            z-index: 10;
+        }
+        .fadeOut {
+            -webkit-animation-name: fadeOut;
+            -webkit-animation-duration: 0.5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-delay: 0s;
+        }
+        @-webkit-keyframes lefter {
+            0% {
+                left: 0px;
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                left: -50px;
+                opacity: 0;
+            }
+        }
+        .cloud-l{
+            -webkit-animation-name: lefter;
+            -webkit-animation-duration: 4s;
+            -webkit-animation-iteration-count: infinite;
+            z-index: 100;
+        }
+        .cloud-r{
+             -webkit-animation-name: righter;
+             -webkit-animation-duration: 4s;
+             -webkit-animation-iteration-count: infinite; z-index: 100;
+         }
+        @-webkit-keyframes righter {
+            0% {
+                right: 0px;
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                right: -50px;
+                opacity: 0;
+            }
+        }
+        .desk {
+            -webkit-animation-name: fadeIn;
+            -webkit-animation-duration: 0.5s;
+            -webkit-animation-iteration-count: 1;
+            -webkit-animation-delay: 0s;
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        @-webkit-keyframes fadeIn {
+            50% {
+                opacity: 0.5; /*中间状态 透明度为0*/
+            }
+            100% {
+                opacity: 1; /*结尾状态 透明度为1*/
+            }
+        }
+
+        @-webkit-keyframes fadeOut {
+            50% {
+                opacity: 0.2;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .btnToDesk {
+            width: 50%;
+            height: 180px;
+            margin: 0 25%;
+            position: absolute;
+            bottom: 0
+        }
+        .tips2, .tips {
+            width: 0px;height: 0px;position: absolute; top: 200px;left: 150px;
+            -webkit-transition: all 2s;  z-index: 103;}
+        .tips2 {left: 72px;}
+        .tips.ng, .tips2.ng { width: 35px;height: 30px;}
+        .tips2.ng { top: 185px;left: 57px;}
+        .tips.ng{left: 135px;top: 185px;}
+        @media only screen and (-Webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+            .seconds {
+                top: 85px;
+            }
+            .tips2, .tips {
+                width: 0px;height: 0px;position: absolute; top: 230px;left: 170px;
+                -webkit-transition: all 2s;  z-index: 103;}
+            .tips2 {left: 85px;}
+            .tips.ng, .tips2.ng { width: 35px;height: 30px;}
+            .tips2.ng { top: 220px;left: 68px;}
+            .tips.ng{left: 156px;top: 220px;}
+        }
+
+
+        @media only screen and (-Webkit-min-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5) {
+            .seconds {
+                top: 110px;
+            }
+
+            .tips2, .tips {
+                width: 0px;height: 0px;position: absolute; top: 250px;left: 190px;
+                -webkit-transition: all 2s;  z-index: 103;}
+            .tips2 {left: 96px;}
+            .tips.ng, .tips2.ng { width: 35px;height: 30px;}
+            .tips2.ng { top: 245px;left: 76px;}
+            .tips.ng{left: 174px;top: 245px;}
+        }
+        .seconds-android {
+            top: 377px;
+            left: 40%;
         }
     </style>
     <script src="./scripts/utils.js"></script>
     <title>通话界面</title>
 </head>
 <body style="background: #0A0A0A">
+<div class="seconds hide">00 : 00</div>
 <div class="ctner">
     <script>
+        _$ = document.querySelector.bind(document);
+        function setPosition(target,img1,ratio){
+            var _left = ((window.innerWidth  - img1.width)/2+ratio.w*img1.width)+'px';
+            var _top = ((window.innerHeight  - img1.height)/2+ratio.h*img1.height)+'px';
+            //console.log(img1.style.width);
+            _$(target).style.left =_left;
+            _$(target).style.top =_top;
+            if(target=='.seconds')_$('.seconds').style.display = 'block';
+        }
+        var ratio = {
+            w:30/638,
+            h:180/1094
+        };
+        if(getSingle().isAndroid()){
+            ratio = {
+                w:260/638,
+                h:650/1094
+            }
+        }
+
+        var _ctner = _$('.ctner');
         var imgPath = getSingle().isAndroid() ? 'android-record' : 'recording';
         var path = window.location.search.replace('?num=', '');
-        window.document.write('<img title="' + path + '"  src="./imgs/' + imgPath + path + '.jpg" style="width:100%;"> ');
+        var img1 = new Image();
+        img1.src = './imgs/' + imgPath + path + '.jpg';
+        img1.attributes['title']=path;
+        img1.classList.add('recording');
+        img1.onload= function(){
+            setPosition('.seconds',img1,ratio);
+        };
+        _$('.ctner').appendChild(img1);
     </script>
 </div>
-<div class="seconds">00 : 00</div>
+
 <!--通话录音-->
 <audio autoplay="true" class="hide" src="http://m1.music.126.net/ZQY65Wt5oHzEw2kWludNWw==/1277632511483673.mp3"></audio>
 <audio controls="controls" class="hide">
-    <source src="./sound/iphone.ogg"/>
     <source src="./sound/iphone.mp3"/>
 </audio>
+<img src="./imgs/tips.png" class="tips tipFlag" />
+<img src="./imgs/tips.png" class="tips2 tipFlag"/>
+<div class="btn1 btn hide"></div>
+<div class="btn2 btn hide"></div>
+<div class="btn3 btn hide"></div>
 <script>
     (function () {
-        var querySelector = document.querySelector.bind(document);
 
-        function setTime() {
-            var sec = 0, min = 0, msg = {sec:null,min:null};
+        var Recording = function () {
+            this.$ = document.querySelector.bind(document);
+            this.init();
+        }, single;
+       // 30/638  154/1094
+         Recording.prototype.init = function () {
+            this.initRecording();
+            if (getSingle().isAndroid()) {
+                this.$('.seconds').classList.add('seconds-android');
+            }
+            this.countDown();
+            this.play();
+        };
+        /**播放通话语音
+         */
+        Recording.prototype.play = function () {
+            var that = this;
+            setTimeout(function () {
+                that.$('audio').play();
+            }, 1000);
+        };
+        //停止播放
+        Recording.prototype.stop = function () {
+            var that = this;
+            that.$('audio').pause();
+        };
+        Recording.prototype.replaceAudio = function (cb) {
+            var that = this;
+            that.$('audio.hide').src = './sound/msg-iphone.mp3';
+            that.$('audio.hide').addEventListener("canplaythrough",
+                    function() {
+                        if(typeof cb =="function")
+                            cb();
+                    },
+                    false);
+        };
+        Recording.prototype.removeSec = function(){
+          this.$('.seconds').remove();
+        };
+        //通话页面初始化
+        Recording.prototype.initRecording = function () {
+            var that = this;
+            var div_ = document.createElement('div');
+            div_.classList.add('btnToDesk');
+            //this.$('img').style.width = window.innerWidth + 'px';
+            this.$('.ctner').style.width = window.innerWidth + 'px';
+            this.$('.ctner').style.height = window.innerHeight + 'px';
+            div_.addEventListener('click', function (e) {
+                that.toDesktop();
+            }, false);
+            this.$('.ctner').appendChild(div_);
+        };
+        //返回桌面
+        Recording.prototype.toDesktop = function () {
+            var that =this;
+            this.removeSec();
+            this.stop();
+            var img = this.$('.recording');
+            img.classList.add('recording-animate');
+            img.style.opacity = 0;
+            var desk = new Image();
+            desk.src = './imgs/desk.jpg';
+            desk.classList.add('desk');
+            desk.attributes.title = img.attributes.title.value;
+            desk.style.height = '100%';
+            desk.onload = function(){
+              desk.style.left = ((window.innerWidth - desk.width)/2 )/window.innerWidth*100+'%';
+            };
+            this.$('.ctner').appendChild(desk);
+            var tips2 = {
+                w:120/638,
+                h:370/1094
+            };
+            var tips = {
+                w:275/638,
+                h:370/1094
+            };
+            setPosition('.tips2',img,tips2);
+            setPosition('.tips',img,tips);
+            setTimeout(function () {
+                desk.style.opacity = 1;
+                that.replaceAudio(function(){});
+                //that.$('tips');
+                var te = that.$('.tips');
+                te.classList.add('ng');
+                te.style.left = (parseFloat(te.style.left.replace('px','')) - 5) +'px';
+                te.style.top = (parseFloat(te.style.top.replace('px','')) - 5) +'px';
+            }, 500);
+            setTimeout(function () { var te = that.$('.tips2');
+                te.classList.add('ng');
+                te.style.left = (parseFloat(te.style.left.replace('px','')) - 5) +'px';
+                te.style.top = (parseFloat(te.style.top.replace('px','')) - 5) +'px';
+                that.msg('tips2',true);
+            }, 1500);
+        };
+        Recording.prototype.msg = function(class_, flag_) {
+            var  that = this;
+            if(!getSingle().isAndroid())this.$('.' + class_).classList.add('ng');
+            this.play();
+            if (flag_) {
+                setTimeout(function () {
+                    that.$('.tips').remove();
+                    that.$('.tips2').remove();
+                    //return;
+                    var img =  that.$('.desk');
+                    img.src = './imgs/iphones7.jpg';
+                    var flag = 0;
+                    img.addEventListener('click', function () {
+                        if (flag == 0)img.src = './imgs/msg' + window.location.search.replace('?num=','') + '.jpg';
+                        if (flag == 1) {
+                            img.style.opacity = 0;
+                            img.src = './imgs/share.jpg';
+                            img.classList.add('fadeIn');
+                            setTimeout(function(){
+                                img.style.opacity = 1;
+                                setTimeout(function(){
+                                    var cloudleft= that.newImage('./imgs/cloud-left.png',img);
+                                    cloudleft.classList.add('cloud-left');
+                                    document.body.appendChild(cloudleft);
+                                    var cloudRight= that.newImage('./imgs/cloud-right.png',img);
+                                    cloudRight.classList.add('cloud-right');
+                                    document.body.appendChild(cloudRight);
+                                    setTimeout(function(){
+                                        var lefter = that.newImage('./imgs/share1.png',img);
+                                        lefter.style.left = '-'+img.style.width ;
+                                        lefter.style['transition']= 'all 1s';
+                                        document.body.appendChild(lefter);
+                                        setTimeout(function(){
+                                            lefter.style.left = 0;
+                                        },500)
+                                    },500);
+                                    setTimeout(function(){
+                                        var righter = that.newImage('./imgs/share2.png',img);
+                                        righter.style.right = '-'+img.style.width ;
+                                        righter.classList.add('right');
+                                        righter.style['transition']= 'all 1s';
+                                        document.body.appendChild(righter);
+                                        setTimeout(function(){
+                                            righter.style.right = 0;
+                                        },500);
+                                    },1000);
+
+                                    setTimeout(function(){
+                                        var righter = that.newImage('./imgs/share3.png',img);
+                                        righter.style.right = img.style.width ;
+                                        righter.style['z-index'] = 99 ;
+                                        righter.classList.add('right');
+                                        righter.style['transition']= 'all 1s';
+                                        document.body.appendChild(righter);
+                                        setTimeout(function(){
+                                            righter.style.right = 0;
+                                        },500)
+                                    },1500);
+                                    setTimeout(function(){
+                                        var righter = that.newImage('./imgs/share4.png',img);
+                                        righter.style.right = '-'+img.style.width ;
+                                        righter.style['z-index'] = 99 ;
+                                        righter.classList.add('right');
+                                        righter.style['transition']= 'all 1s';
+                                        document.body.appendChild(righter);
+                                        setTimeout(function(){
+                                            righter.style.right = 0;
+                                        },500)
+                                    },1500);
+                                    setTimeout(function(){
+                                        var righter = that.newImage('./imgs/share5.png',img);
+                                        righter.style.right = img.style.width ;
+                                        righter.classList.add('right');
+                                        righter.style['z-index'] = 101 ;
+                                        righter.style['transition']= 'all 1s';
+                                        document.body.appendChild(righter);
+                                        setTimeout(function(){
+                                            righter.style.right = 0;
+                                        },500)
+                                        that.$('.cloud-right').classList.add('cloud-r')
+                                        that.$('.cloud-left').classList.add('cloud-l')
+                                    },1500);
+                                    setTimeout(function(){
+                                        var righter = that.newImage('./imgs/btn.png',img)
+                                        righter.style['z-index'] = 102 ;
+                                        righter.style.right = 0 ;
+                                        document.body.appendChild(righter);
+                                        that.$('.btn1').style.display = 'block';
+                                        that.$('.btn2').style.display = 'block';
+                                        that.$('.btn3').style.display = 'block';
+                                        that.$('.btn1').addEventListener('click',function(){
+                                            alert('此处下载');
+                                        })
+                                        that.$('.btn3').addEventListener('click',function(){
+                                            alert('此处关注微信');
+                                        })
+                                        that.$('.btn2').addEventListener('click',function(){
+                                            alert('此处分享');
+                                        })
+                                    },2200);
+                                },200);
+                            },1000)
+                        }
+                        flag++;
+                    }, false);
+                }, 1000);
+            }
+        };
+        //
+        Recording.prototype.newImage = function(argV,img,cb){
+            var imger = new Image();
+            imger.style.height = img.style.height;
+            imger.style.width = img.style.width ;
+            imger.src = argV;
+            imger.style.position = 'absolute';
+            imger.style.top = '0';
+            if(typeof cb=='function'){
+                imger.addEventListener('load',cb,false);
+            }
+            return imger;
+        };
+        /***倒计时
+         */
+        Recording.prototype.countDown = function () {
+
+            var that = this;
+            var sec = 0, min = 0, msg = {sec: null, min: null};
             setInterval(function () {
                 sec++;
                 if (sec < 10) {
                     msg.sec = '0';
                 } else if (sec > 59) {
                     sec = 0;
+                    msg.sec = '0';
                     min++;
-                }else{
+                } else {
                     msg.sec = '';
                 }
-                msg.min = min < 10?'0':'';
+                msg.min = min < 10 ? '0' : '';
                 msg.sec += sec;
                 msg.min += min;
-
-                querySelector('.seconds').innerHTML = msg.min+' : '+msg.sec;
+                if(that.$('.seconds')&&that.$('.seconds').innerHTML)that.$('.seconds').innerHTML = msg.min + ' : ' + msg.sec;
             }, 1000);
-        }
-
-        setTime();
-
+        };
         document.addEventListener('DOMContentLoaded', {
             handleEvent: function () {
-                setTimer();
-                click();
+                new Recording();
             }
         }, false);
-        function click() {
-            var div_ = document.createElement('div');
-            var style = {
-                width: '50%',
-                height: '180px',
-                margin: '0 25%',
-                position: 'absolute',
-                bottom: '0'
-            };
-            div_.style.width = style.width;
-            div_.style.height = style.height;
-            div_.style.position = style.position;
-            div_.style.bottom = style.bottom;
-            querySelector('img').style.width = window.innerWidth + 'px';
-            querySelector('img').style.height = window.innerHeight + 'px';
-            div_.addEventListener('click', function (e) {
-                var img = querySelector('img');
-                window.location.href = "./page3.html?num=" + img.attributes.title.value
-            }, false);
-            querySelector('.ctner').appendChild(div_);
-        }
-
-        function setTimer() {
-            setTimeout(function () {
-                querySelector('audio').play();
-            }, 1000);
-        }
 
     })();
 </script>
