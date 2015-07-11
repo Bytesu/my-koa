@@ -13,14 +13,54 @@
     <title>Kissy</title>
 </head>
 <body>
+    <section class="section section1 flex-ctner">
+        <div class="text tc">
+            <h3>仙剑之父-姚仙</h3>
+            <span>手机</span>
+        </div>
+        <div class="flex">
+            <div class="icon-ctner">
+                <img src="images/clock@2x.png" alt=""/>
+                <span>闹钟</span>
+            </div>
 
+
+        </div>
+        <div class="icon">
+            <div class="icon-ctner">
+                <img src="images/clock@2x.png" alt=""/>
+                <span>闹钟</span>
+            </div>
+
+
+        </div>
+        <div class="opr">
+            <div class="opr-ctner">
+                <img src="images/refuse@2x.png" alt=""/>
+                    <span>
+                        拒接
+                    </span>
+            </div>
+        </div>
+    </section>
+    <section class="section section2"></section>
+    <section class="section section3"></section>
+    <section class="section section4"></section>
+    <section class="section section5"></section>
+    <section class="section section6"></section>
 </body>
 <!--http://m.kissyui.com/-->
 <script src="./js/libs/mini-all.js"></script>
 <script src="m/index.js"></script>
 <script>
     KISSY.ready(function (S) {
-        //alert('Hello World!');
+        S.use('m/index', function (S, Index) {
+            new Index({
+                android:{
+                    ring:'',
+                }
+            });
+        });
     });
 </script>
 </html>

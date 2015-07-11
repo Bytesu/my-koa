@@ -1,8 +1,16 @@
-* {
-    -webkit-tap-highlight-color: transparent;
-    padding: 0;
+dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, span, a, input, textarea, p, blockquote, th, td, header, nav, footer, article, section, aside, time, figure, img, div {
     margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
-body {font-family: STHeitiSC-Light, HiraginoSansGB-W3, 'Hiragino Sans GB', tahoma, arial, sans-serif;}
+.tc{text-align: center}
+.fr{float: right}
+.fl{float: left}
+body {font:24px/36px STHeitiSC-Light, HiraginoSansGB-W3, 'Hiragino Sans GB', tahoma, arial, sans-serif;}
 .flex-ctner {display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;}
 .flex {flex: 1;}
+.section{display: none;position: absolute;top: 0;right: 0;left: 0;bottom: 0; flex-direction: column; }
+.section1{display: block;}
+.ctner{
+    width: 100%;
+}
