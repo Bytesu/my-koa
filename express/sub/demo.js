@@ -7,6 +7,7 @@
 var express = require('express');
 var router = express.Router();
 var path = require('path');
+var xmlBodyParser = require('express-xml-bodyparser');
 
 
 
@@ -30,22 +31,25 @@ demo.locals._layoutFile = 'tmpl.html';
 demo.use(require('./../middleware/authentication/')); //权限验证中间件
 demo.use(require('./../middleware/cookie/')); //cookie
 demo.use(require('./../middleware/body-parser/')); //body-parser
-demo.use(require('./../middleware/csrf/'));
+demo.use(xmlBodyParser());
+//demo.use(require('./../middleware/csrf/'));
 //demo.use(require('./../middleware/cookie-session/'));
 demo.all('*', require('./../middleware/compression/')); //gzip压缩模块
-// error handler
-app.use(function (err, req, res, next) { //csrf 禁止访问页面
-    if (err.code !== 'EBADCSRFTOKEN') return next(err)
-
-    // handle CSRF token errors here
-    res.status(403)
-    res.send('form tampered with')
-});
 router.use(require('./../routers/demo/index'));//路由器
 demo.use(router);
 module.exports = demo;
+// error handler
+/*app.use(function (err, req, res, next) { //csrf 禁止访问页面
+    console.log(req.originalUrl+'---')
+    if (err.code !== 'EBADCSRFTOKEN') return next(err)
 
-demo.get('/', function (req, res, next) {
+    // handle CSRF token errors he
+ res.send('form tampered with')re
+    res.status(403)
+});*/
+
+
+/*demo.get('/', function (req, res, next) {
     console.log(res.locals);
     console.log(process.env.NODE_ENV);
     console.log('backend.mountpath --' + demo.mountpath);
@@ -74,14 +78,14 @@ demo.get('/', function (req, res, next) {
     //});
     //res.redirect(200 ,'www.baidu.com')
 
-    /* res.download(__dirname+'/index.js', function(err){
+    /!* res.download(__dirname+'/index.js', function(err){
      if (err) {
      // Handle error, but keep in mind the response may be partially-sent
      // so check res.headersSent
      } else {
      // decrement a download credit, etc.
      }
-     });*/
+     });*!/
 
     //res.sendFile(path [, options] [, fn]);
     // res.sendFile(__dirname+'/index.js' );
@@ -90,4 +94,4 @@ demo.get('/', function (req, res, next) {
     res.send('适时启动服务器');
 
 });
-return false;
+return false;*/

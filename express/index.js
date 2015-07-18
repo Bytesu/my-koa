@@ -34,9 +34,9 @@ router.get("/", function (req, res) {
 });
 
 
-app.use(['/web'],require('./sub/web.js'));
-app.use(['/app'],require('./sub/app.js'));
-app.use(['/backend'],require('./sub/backend.js'));
+//app.use(['/web'],require('./sub/web.js'));
+//app.use(['/app'],require('./sub/app.js'));
+//app.use(['/backend'],require('./sub/backend.js'));
 app.use(['/d'],require('./sub/demo.js'));
 
 app.use('/dev',router);
@@ -50,7 +50,8 @@ app.use(function (req, res, next) {
 // no stacktraces leaked to user
 app.use(function (err, req, res, next) {
     res.status(err.status || 500);
-    console.log('erroorrr ----------------');
+    console.log('404 ----------------path:%s',req.method);
+    //console.log(req.originalUrl+'====');
     res.render('404', {
         message: err.message,
         error: {}

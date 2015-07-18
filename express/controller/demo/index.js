@@ -44,6 +44,9 @@ Demo.prototype.test = function (req, res, next) {
 
     //res.end(n+' views')
 };
+Demo.prototype.im = function (req, res, next) {
+    res.render('im')
+};
 module.exports = function () {
     if (!single)single = new Demo();
     return single;

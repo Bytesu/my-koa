@@ -3,6 +3,7 @@
  */
 var express = require('express');
 var D = require('./../../controller/demo/');
+var Wx = require('./../../controller/demo/wx.js');
 var router = express.Router();
 /*var router2 = express.Router();
 router2.get('/', function (req, res, next) {
@@ -10,4 +11,11 @@ router2.get('/', function (req, res, next) {
 });*/
 
 router.get('/test',D.test);
+router.get('/im',D.im);
+router.all('/wx/',function(req,res,next){
+        console.log(req.path)
+        next();
+    },
+    Wx.test);
+router.all('/im',Wx.test);
 module.exports = router;
