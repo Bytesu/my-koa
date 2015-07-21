@@ -1,0 +1,75 @@
+
+.im-ctner {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.im-menu {
+    height: 100%;
+    width: 260px;
+    background-color: #383435;
+    background-color: #0c94de;
+}
+
+.im-content {
+    height: 100%;
+    position: relative;-webkit-box-orient: vertical;
+    flex-direction: column;
+}
+
+.im-content >section >header{
+    height: 50px;background-color: rgba(255,255,255,.97);
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    padding: 5px;
+}
+.im-content >section >header img{width: 40px;margin: 0 15px;  }
+.im-content >section >header .info{padding: 5px; }
+.im-content >section a .img-ctner{   width: 73px;padding: 5px 20px;   padding-left: 30px;  padding-right: 13px;}
+.im-content >section a img{ width: 30px;  }
+.im-content >section a:hover{background: rgba(240,240,240,.3);}
+.im-content >section a{transition: all .5s;}
+.im-content >section a .info{padding: 5px; }
+
+.im-content >footer .chat-input__text-area{
+    display: block;
+    width: 100%;
+    outline: none;
+    line-height: 1.38em;
+    padding: 0;
+    border: 0;
+    resize: none;
+    margin: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 44px;
+    font-size: 1em;
+    color: black;
+}
+.im-content >footer{
+    height: 80px;background-color: rgba(255,255,255,.97);
+    border-top: 1px solid rgba(0,0,0,.05);
+}
+
+
+
+.nav-menu{
+    height: 100%;
+    -webkit-box-orient: vertical;  flex-direction: column;
+}
+
+
+
+
+.user-list li{list-style: none;padding: 5px;overflow: hidden; margin-right: 15px;}
+.user-list li:hover{background: rgb(41,128,185) !important;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #304047 !important;}
+.user-list li a{color: rgba(239, 239, 229, 1);;}
+.user-list li a img{  vertical-align: text-top;border-radius: 3px;}
+.user-ctner{height: 100px;}
+.user-ctner .panel{  margin: 10px;padding: 5px;border-radius: 3px;}
+.user-ctner .panel img{border-radius: 5px;}
+.user-ctner .panel:hover{background: rgba(197, 211, 213, 1);;}
+.user-panel{height: 100px;}

@@ -1,0 +1,226 @@
+dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, span, a, input, textarea, p, blockquote, th, td, header, nav, footer, article, section, aside, time, figure, img, div {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.tc{text-align: center}
+.fr{float: right}
+.fl{float: left}
+body {font:24px/36px STHeitiSC-Light, HiraginoSansGB-W3, 'Hiragino Sans GB', tahoma, arial, sans-serif;}
+
+.section{display: none ;position: absolute;top: 0;right: 0;left: 0;bottom: 0; flex-direction: column; overflow: hidden;}
+.section1{display: none ;background: #000;}
+.section1-android{display: none ;background: #161616;}
+.section2{display: none  ;background: #0a0a0a;}
+.section2-android{display: none ;background: #000000;}
+.section3{display: none;background: #000000;}
+.section4{display: none;background: #ececec;}
+.ctner{
+    width: 100%;flex-direction: column;z-index: 11;
+}
+.position-absolute{position: absolute;}
+.position-fixed{position: fixed;}
+.w100{width: 100%;}
+.ctner-share {
+    width: 100%;
+    flex-direction: column;
+    -webkit-box-orient: vertical ;
+    z-index: 11;
+}
+.color-white{
+    color: white;
+}
+/*ring*/
+.img{
+    width: 100%;position: absolute;z-index: 10;
+}
+.icon{  margin: 30px 52px;
+    font-size: 12px;}
+.opr{font-size: 14px;  margin-bottom: 15px;}
+.icon-ctner,.opr-ctner{display: inline-block;}
+.icon-ctner img,.opr-ctner img{display: block;width: 60%;margin: 0 auto;}
+.icon-ctner img{width: 100%;}
+/*recording*/
+.recording-text{
+    margin-right: 20px;
+}
+.bottom-0{bottom: 0;}
+
+.flex-ctner {z-index: 11;
+    display: flex ;
+    display: -webkit-flex ;
+    display: -webkit-box;
+    display: -ms-flexbox ;
+    -webkit-box-orient: vertical ;
+}
+.flex {
+    flex: 1;
+    -moz-box-flex:1;
+    -webkit-box-flex:1;
+}
+.margin-top-25{margin-top: 25px;}
+
+
+
+/*share   */
+.share-animate{transition: all 1s; -webkit-transition: all 1s;}
+.share1{left: -100%;position: relative;  }
+.share2{right: -100%;position: relative;}
+.share3,.share5{left: -100%;}
+.share4{right: -100%;}
+.hide {
+    display: none;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0; /*初始状态 透明度为0*/
+    }
+    50% {
+        opacity: 0.8; /*中间状态 透明度为0*/
+    }
+    100% {
+        opacity: 1; /*结尾状态 透明度为1*/
+    }
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-duration: 2s; /*动画持续时间*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 0s; /*延迟时间*/
+}
+.btn-share{
+    z-index: 20;
+}
+
+.recording{
+    height:100%;margin:0 auto;display:block;
+}
+.recording-animate {
+    -webkit-animation-name: fadeOut;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-delay: 0s;
+}
+.seconds {
+    font-size: 20px;
+}
+.fadeOut {
+    -webkit-animation-name: fadeOut;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 0s;
+}
+@-webkit-keyframes lefter {
+    0% {
+        left: 0px;
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        left: -50px;
+        opacity: 0;
+    }
+}
+.cloud-l{
+    -webkit-animation-name: lefter;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    z-index: 100;
+}
+.cloud-r{
+    -webkit-animation-name: righter;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite; z-index: 100;
+}
+@-webkit-keyframes righter {
+    0% {
+        right: 0px;
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        right: -50px;
+        opacity: 0;
+    }
+}
+.desk {
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-delay: 0s;
+}
+.layer{
+    top: 0;background-color: rgba(0,0,0,.5);display: none;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+.wx-tips{
+    z-index: 100;
+    width: 70%;
+    margin: 45% 15%;
+}
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0.8; /*中间状态 透明度为0*/
+    }
+    100% {
+        opacity: 1; /*结尾状态 透明度为1*/
+    }
+}
+@-webkit-keyframes fadeOut {
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.btnToDesk {
+    width: 50%;
+    height: 180px;
+    margin: 0 25%;
+    position: absolute;
+    bottom: 0
+}
+.tips-animate {-webkit-transition: all 0.1s; }
+/*.tips2 {left: 72px;}
+.tips.ng, .tips2.ng { width: 35px;height: 30px;}
+.tips2.ng { top: 185px;left: 57px;}
+.tips.ng{left: 135px;top: 185px;}*!/!*!/*/
+@media only screen and (-Webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    .seconds {
+        top: 85px;
+    }
+    /*.tips2, .tips {
+        width: 0px;height: 0px;position: absolute; top: 230px;left: 170px;
+        -webkit-transition: all 2s;  z-index: 103;}
+    .tips2 {left: 85px;}
+    .tips.ng, .tips2.ng { width: 35px;height: 30px;}
+    .tips2.ng { top: 220px;left: 68px;}
+    .tips.ng{left: 156px;top: 220px;}*/
+}
+
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5) {
+    .seconds {
+        top: 110px;
+    }
+
+    /*.tips2, .tips {
+        width: 0px;height: 0px;position: absolute; top: 250px;left: 190px;
+        -webkit-transition: all 2s;  z-index: 103;}
+    .tips2 {left: 96px;}
+    .tips.ng, .tips2.ng { width: 35px;height: 30px;}
+    .tips2.ng { top: 245px;left: 76px;}
+    .tips.ng{left: 174px;top: 245px;}*/
+}
+.seconds-android {
+    top: 377px;
+    left: 40%;  }

@@ -1,0 +1,40 @@
+.blog-ctner{position: absolute;height: 100%;width: 100%;}
+.blog-nav{width: 260px;  background: #f9f9f7;  border-right: 1px solid #cfcfcf;}
+.blog-nav .nav-ctner{padding: 15px;}
+.blog-nav .nav-ctner .user{}
+.blog-nav .nav-ctner .info{  font: 12px/21px "Microsoft Yahei","冬青黑体简体中文 w3";
+    color: #a6a6a4;
+    padding: 0 15px;}
+.blog-nav .nav-ctner .user h5{  font: 300 16px/50px "Microsoft Yahei","冬青黑体简体中文 w3";
+    color: #272727;
+    text-align: center;}
+.blog-nav .nav-ctner .user a{text-align: center;
+    display: block;}
+.blog-nav .nav-ctner .user img{  border-radius: 47px;margin: 0 auto; border: 3px solid rgba(255,20,50,.3);}
+.blog-nav .nav-ctner .data p{   font-family: "ff-tisa-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.4;   margin: 30px 15px 0px 0px;border-top: 1px solid #eee;
+    color: #b3b3b1;}
+
+
+.content-ctner { padding: 15px;}
+.content-ctner .blog-list{max-width: 755px;  margin: 0 auto;}
+.post-item {border-bottom:#dedede solid 1px; padding:30px 0 20px;}
+.post-item h2  { font:700 24px/32px "Microsoft Yahei","冬青黑体简体中文 w3";font-weight: 300;}
+.post-item h5  { font-size:12px; font-weight:normal; color:#bebebe;line-height:35px; height:35px; overflow:hidden; margin:5px 0;}
+.post-item h5 span { margin-right:8px;}
+.post-item .post-item-icon { background:url(../img/bg_icon.png) no-repeat 0 -78px; padding-left:20px; margin-left:15px;}
+.post-item span.fr { line-height:17px; margin-top:8px;}
+.post-item .post-item-icon a { color:#4477a6;}
+.post-item a { color:#000;}
+.post-item a:hover { color:#4477a6; text-decoration:none;}
+.post-item p { font-size: 14px;
+    line-height: 22px;}
+
+.post-item-avatar { position:relative;width:100%; height:50px; margin-top:10px;}
+.post-item-avatar h4 { float:right; margin-left:10px; height:50px; width:50px;position:relative;}
+.post-item-avatar h4 span { position:absolute; top:0; left:0; height:100%; width:100%; background:url(../img/bg_post-item-avatar.png) no-repeat 0 0;}
+.post-item-avatar p a { color:#000;}
+.post-item-avatar p { line-height:25px; color:#a6a6a4; font-size:12px; text-align:right;}

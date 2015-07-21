@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no;email=no" name="format-detection"/>
+    <meta content="yes" name="apple-touch-fullscreen"/>
+    <meta content="width" name="mobileOptimized"/>
+    <meta content="true" name="handheldFriendly"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>仙剑客栈</title>
+</head>
+<body>
+<section class="section section1  ">
+    <img src="images/calling1.jpg" alt="" class="img iphone-calling"/>
+
+    <div class="flex flex-ctner" style="position: absolute;top: 0;right: 0;left: 0;bottom: 0;">
+        <div class="ctner flex flex-ctner color-white" style="position: relative;">
+            <div class="text tc margin-top-25">
+                <h3>仙剑之父-姚仙</h3>
+                <span>手机</span>
+            </div>
+            <div class="flex">
+                <audio class="calling" src="sound/iphone.mp3" autoplay loop></audio>
+            </div>
+            <div class="icon">
+                <div class="icon-ctner ">
+                    <img src="images/clock.png" alt=""/>
+                    <span>闹钟</span>
+                </div>
+                <div class="icon-ctner fr">
+                    <img src="images/msg.png" alt=""/>
+                    <span>短信</span>
+                </div>
+            </div>
+            <div class="opr">
+                <div class="opr-ctner tc">
+                    <img src="images/refuse.png" alt=""/>
+                    <span>
+                        拒接
+                    </span>
+                </div>
+                <div class="opr-ctner tc fr btn-receive">
+                    <img src="images/recive.png" alt=""/>
+                    <span>接听</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section section1-android  ">
+    <div class="ctner flex flex-ctner color-white">
+        <img src="images/android/header.png" alt="" class=" img" style="position: relative;"/>
+        <img src="images/android/body1.png" alt="" class="body img" style="position: relative;"/>
+        <img src="images/android/bottom.png" alt="" class="bottom-0 img"/>
+
+        <div class="btn-share btn-recording position-fixed"></div>
+    </div>
+</section>
+
+<section class="section section2 ">
+    <div class="ctner flex flex-ctner">
+        <div class="recording-header" style="padding: 25px;z-index: 11;">
+            <img src="images/recoding/header1.jpg" alt="" class="fr" style="width: 30%;">
+
+            <div class="recording-text color-white" style="width: 70%;padding-top: 15px;">
+                <h3>仙剑之父-姚仙</h3>
+                <span class="recoding-seconds seconds">00 : 00</span>
+            </div>
+        </div>
+        <img src="images/recoding/recording.jpg" alt="" class="img bottom-0" style="bottom: -30px;">
+    </div>
+    <div class="refuse position-fixed btn-share"></div>
+</section>
+<section class="section section2-android  ">
+    <div class="ctner flex flex-ctner color-white">
+        <img src="images/android/recording/recording1.jpg" alt="" class=" img" style="position: relative;"/>
+        <img src="images/android/recording/bottom.jpg" alt="" class="bottom-0 img"/>
+    </div>
+</section>
+<section class="section section3 desk">
+    <div class="ctner flex flex-ctner" style="z-index: 1">
+        <img src="images/desk/desk2.jpg" alt="" class="img desk-top">
+        <img src="images/desk/desk1.jpg" alt="" class="img bottom-0" style="  bottom: -2px;">
+        <img src="images/desk/tips.png" alt="" class="position-fixed tips-1 tips"/>
+        <img src="images/desk/tips.png" alt="" class="position-fixed tips-2 tips"/>
+    </div>
+    <div class="layer position-fixed" style="z-index: 100 !important;">
+        <img src="images/desk/wx-msg.png" alt="" class=" wx-tips"  >
+    </div>
+
+</section>
+<section class="section section4">
+    <div class="ctner flex flex-ctner">
+        <img src="images/wx/wx1.jpg" alt="" class="img " style="width: 90%;max-height:90%;">
+        <img src="images/wx/wx.jpg" alt="" class="img bottom-0">
+    </div>
+</section>
+</body>
+<!--http://m.kissyui.com/-->
+<script src="./js/libs/mini-all.js"></script>
+<script src="js/m/index.js"></script>
+<script>
+    KISSY.ready(function (S) {
+        S.use('m/index', function (S, Index) {
+            new Index({
+                recoding: {//iphone录音
+                    num1: 'sound/yx.mp3',//仙剑之父
+                    num2: 'sound/wl.mp3'
+                },
+                androidRecording: { //安卓录音
+                    num1: 'sound/yx.ogg',//仙剑之父
+                    num2: 'sound/wl.ogg'
+                }
+            });
+        });
+    });
+</script>
+</html>

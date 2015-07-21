@@ -5,40 +5,107 @@ var demoConfig = require('./../../config/demo.js'),
     log = require('./../../libs/logger'),
     config = require('./../../config/wx/'),
     _ = require('underscore'),
+    EventProxy =  require('eventproxy'),
+    wxUser =  require('./../../libs/wx/User.js'),
+    wxApi =  require('./../../libs/wx/API.js'),
+    io = require('./../../libs/socket.io.js'),
+    mongodb = require('./../../libs/mongoose/'),
     util = require('./../../libs/byte.js');
 var single;
 function Wx() {
 };
 
 Wx.prototype.test = function (req, res, next) {
-    console.log((!!req.query.echostr) + '-------------------------------' + req.query.echostr);
     if (!!req.query.echostr) {
         var echostr = validSignature(req.query);
-        console.log('-------------------------------' + echostr);
         res.send(echostr);
         res.end();
-    }
-    if (req.body.xml) {
+    }else if (req.body.xml) {
         handleXml(req.body.xml);
+        res.send('Finish Received !');
+        res.end();
+    }else{
+        res.send('Finish Received !');
+        res.end();
     }
-    res.send('Finish Received !');
-    res.end();
+
 };
-//¶ÔÓ¦ÏûÏ¢ÀàĞÍ£ºÎÄ±¾¡¢Í¼Æ¬¡¢ÒôÆµ¡¢ÊÓÆµ¡¢Ğ¡ÊÓÆµ¡¢Á´½Ó¡¢µØÀíÎ»ÖÃ¡¢ÊÂ¼ş
-//¶ÔÓ¦ÊÂ¼ş£º¹Ø×¢¡¢È¡Ïû¹Ø×¢¡¢ÉÏ±¨µØÀíÎ»ÖÃ¡¢É¨Ãè¡¢µã»÷²Ëµ¥À­È¡ÏûÏ¢¡¢µã»÷²Ëµ¥Ìø×ªÁ´½Ó
-var EventType = ['TEXT','IMAGE','VOICE','VIDEO','SHORTVIDEO','LINK','LOCATION','EVENT'],
-    MsgType = ['SUBSCRIBE','UNSUBSCRIBE','LOCATION','SCAN','CLICK','VIEW'];
+//å¯¹åº”æ¶ˆæ¯ç±»å‹ï¼šæ–‡æœ¬ã€å›¾ç‰‡ã€éŸ³é¢‘ã€è§†é¢‘ã€å°è§†é¢‘ã€é“¾æ¥ã€åœ°ç†ä½ç½®ã€äº‹ä»¶
+//å¯¹åº”äº‹ä»¶ï¼šå…³æ³¨ã€å–æ¶ˆå…³æ³¨ã€ä¸ŠæŠ¥åœ°ç†ä½ç½®ã€æ‰«æã€ç‚¹å‡»èœå•æ‹‰å–æ¶ˆæ¯ã€ç‚¹å‡»èœå•è·³è½¬é“¾æ¥
+var MsgType = {TEXT:'TEXT',IMAGE:'IMAGE',VOICE:'VOICE',VIDEO:'VIDEO',SHORTVIDEO:'SHORTVIDEO',LINK:'LINK',LOCATION:'LOCATION',EVENT:'EVENT'},
+    EventType = {SUBSCRIBE:'SUBSCRIBE',UNSUBSCRIBE:'UNSUBSCRIBE',LOCATION:'LOCATION',SCAN:'SCAN',CLICK:'CLICK',VIEW:'VIEW',
+        //å®¢æœä¼šè¯çŠ¶æ€é€šçŸ¥äº‹ä»¶
+        KF_SWITCH_SESSION:"KF_SWITCH_SESSION",//è½¬æ¥ä¼šè¯
+        KF_CLOSE_SESSION:"KF_CLOSE_SESSION",//å…³é—­ä¼šè¯
+        KF_CREATE_SESSION:"KF_CREATE_SESSION",//æ¥å…¥ä¼šè¯
+    };
+    EventType = {SUBSCRIBE:'SUBSCRIBE',UNSUBSCRIBE:'UNSUBSCRIBE',LOCATION:'LOCATION',SCAN:'SCAN',CLICK:'CLICK',VIEW:'VIEW'};
 
 
 /**
- * ´¦ÀíxmlÏûÏ¢
- * @param xml£ºxml¶ÔÏó
+ * å¤„ç†xmlæ¶ˆæ¯
+ * @param xmlï¼šxmlå¯¹è±¡
+ * todo:åšä¼˜åŒ–
  */
 function handleXml(xml) {
-    console.log(xml);
+    console.log(xml)
+    console.log('00000000000000')
+    switch(xml.msgtype[0].toUpperCase()) {
+        case MsgType.EVENT:
+            console.log(xml);
+            eventType(xml);
+            break;
+    }
+    io.emit('chat.wx',xml);
 };
+
+function eventType (xml){
+
+    switch(xml.event[0].toUpperCase())
+    {
+        case EventType.SUBSCRIBE:
+            saveNewUser(xml);
+            break;
+    }
+
+    return false;
+};
+/***
+ * ä¿å­˜æ–°ç”¨æˆ·
+ * @param Userï¼šæ–°ç”¨æˆ·
+ */
+function saveNewUser(User){
+    var ep = new EventProxy();
+
+    ep.all('wx.token',function(token){
+        console.log(token);
+
+        wxUser.getUserInfo({
+            token:token.access_token,
+            openid:User.fromusername[0]
+        },function(res){
+            var user =   _.extend(User,JSON.parse(res));
+            user.subscribe_time *= 1000;
+            console.log(user);
+            mongodb.UserModel.findOne({openid:user.openid},function(err,res_){
+                if(err||!res_){
+                    var UserEntity = new mongodb.UserModel(user);
+                    UserEntity.save();
+                }else if(res_){
+                    console.log('--------------------');
+                    console.log(res_);
+                  //  res.save();
+                }
+            });
+
+        })
+     });
+    wxApi.getToken(function(token){
+        ep.emit('wx.token',token);
+    });
+}
 /**
- * ÑéÖ¤Ç©Ãû
+ * éªŒè¯ç­¾å
  * obj
  */
 function validSignature(obj) {

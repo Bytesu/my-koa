@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no;email=no" name="format-detection"/>
+    <meta content="yes" name="apple-touch-fullscreen"/>
+    <meta content="width" name="mobileOptimized"/>
+    <meta content="true" name="handheldFriendly"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>仙剑客栈</title>
+</head>
+<body>
+<section class="section section5 flex-ctner" >
+    <img src="images/share/share.jpg" alt="" style="width: 100%;height: 100%;z-index: 10;" />
+    <div class="ctner-share flex " style="position: absolute;top: 0;">
+        <img src="images/share/share1.png" alt="" class="w100 share1 share-animate">
+        <img src="images/share/share2.png" alt="" class="w100 share2 share-animate" style="top: -30px;">
+        <img src="images/share/cloud-left.png" alt="" class="w100 position-fixed bottom-0 share-cloud-left" style="z-index:17;">
+        <img src="images/share/cloud-right.png" alt="" class="w100 position-fixed bottom-0 share-cloud-right" style="z-index:17;">
+        <img src="images/share/share3.png" alt="" class="fl position-fixed share3 share-animate" style="width: 55%;  top: 30%;z-index: 16;">
+        <img src="images/share/share4.png" alt="" class="fr position-fixed share4 share-animate" style="width: 55%;top: 30%;z-index: 16;">
+        <img src="images/share/share5.png" alt="" class=" position-fixed share5 share-animate" style="width: 60%;top: 46%;margin: 0 auto;z-index: 18;">
+        <img src="images/share/share-arrow.png" alt="" class="share-arrow position-fixed  " style="width: 100%;top: 0%;display: none;z-index: 19;">
+        <img src="images/share/btn.png" alt="" class="position-fixed share-btn share-animate" style="width: 100%;bottom: 0%;z-index: 18;display: none;">
+        <div class="btn-share btn-down position-fixed"></div>
+        <div class="btn-share btn-focus position-fixed"></div>
+        <div class="btn-share btn-website position-fixed"></div>
+    </div>
+</section>
+</body>
+<script src="./js/libs/mini-all.js"></script>
+<script src="js/m/share.js"></script>
+<script>
+    KISSY.ready(function (S) {
+
+        S.use('m/share', function (S, Share) {new Share({
+            down:'sound/Helium.mp3',//下载url，请使用http://***格式绝对路径
+            focus:'',//关注我们
+            website:'http://www.baidu.com'//官网url，请使用http://***格式绝对路径
+        });});
+    });
+</script>
+</html>

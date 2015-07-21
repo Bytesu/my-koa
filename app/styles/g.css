@@ -1,0 +1,44 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+body{
+    font: 12px/1.5  Arial, 'Microsoft Yahei', STHeiti;
+}
+.flex-ctner{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-grow: 0;
+}
+.flex-flow{
+    flex-flow: row;
+}
+.flex0{
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+}
+.flex1{
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+a{background-color:transparent;color: #333333;text-decoration: none}a:active,a:hover{outline:0}
+.fs12{font-size: 12px;}
+.fs14{font-size: 14px;}
+.fs16{font-size: 16px;}
+.line-height-100{line-height: 100%;}
+.fl{float: left;}
+.fr{float: right;}
+.tr{text-align: right;}
+.tl{text-align: left;}
+.clearfix{clear: both;}
+.color-ddd{color: #ddd;}
+.font-weight-blod{font-weight: bold;opacity: .6}
+.font-weight-normal{font-weight: normal;}
+ul li{list-style: none}
+.nowrap{white-space: nowrap;text-overflow: clip;}

@@ -19,16 +19,19 @@ KISSY.add('m/index', function (S, Node, Base, Anim) {
             num2: 'images/recoding/header2.jpg'
         },
         recoding: {//iphone录音
-            num1: 'sound/Helium.mp3',//仙剑之父
+            //num1: 'sound/Helium.mp3',//仙剑之父
+            num1: 'sound/horse.ogg',
             num2: 'sound/Helium.mp3'//�ɽ�֮��
         },
         tips: 'sound/msg-iphone.mp3',
         soundCalling: {
-            android: 'sound/Helium.mp3',
+            //android: 'sound/Helium.mp3',
+            android: 'sound/horse.ogg',
             iphone: 'sound/iphone.mp3'
         },
         androidRecording: { //安卓录音
-            num1: 'sound/Helium.mp3',//仙剑之父
+           // num1: 'sound/Helium.mp3',//仙剑之父
+            num1: 'sound/horse.ogg',
             num2: 'sound/iphone.mp3'
         },
         wx: {

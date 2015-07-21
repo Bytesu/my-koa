@@ -11,6 +11,26 @@ var wx = {
                 expires:7200
         }
     },
+    user:function(token,openid){//
+        return {
+            url:'https://api.weixin.qq.com/cgi-bin/user/info?access_token='+token+'&openid='+openid+'&lang=zh_CN'//根据openid获取用户信息url
+        }
+    },
+    kf:function(){
+
+        return {
+          //获取客服基本信息url
+          list:'https://api.weixin.qq.com/cgi-bin/customservice/getkflist?access_token=ACCESS_TOKEN',
+            //获取在线客服列表
+            online:'https://api.weixin.qq.com/cgi-bin/customservice/getonlinekflist?access_token=ACCESS_TOKEN',
+            //添加客服
+            add:'https://api.weixin.qq.com/customservice/kfaccount/add?access_token=ACCESS_TOKEN',
+            //更新客服信息
+            update:'https://api.weixin.qq.com/customservice/kfaccount/update?access_token=ACCESS_TOKEN',
+            //删除客服信息
+            delete:'https://api.weixin.qq.com/customservice/kfaccount/del?access_token=ACCESS_TOKEN&kf_account=KFACCOUNT'
+        };
+    },
     test:{
         token:'Bytesu211064'
     }

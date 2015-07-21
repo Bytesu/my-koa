@@ -17,7 +17,15 @@ var config = {
       secret:util.randomStr(10)
     },
     path: {
-        _static: ["app", ".tmp",'labs']//静态文件路径
+        _static: ["app", ".tmp",'labs','node_modules','express']//静态文件路径
+    },
+    mongodb:{
+        host:'101.200.193.213',
+        port:'27017',
+        db:'wsx'
+        /*user:'bytedb',
+        pass:'211064db'*/
     }
 };
+
 module.exports = config;

@@ -44,6 +44,12 @@ Demo.prototype.test = function (req, res, next) {
 
     //res.end(n+' views')
 };
+Demo.prototype.index = function (req, res, next) {
+    res.render('index')
+};
+Demo.prototype.blog = function (req, res, next) {
+    res.render('blog')
+};
 Demo.prototype.im = function (req, res, next) {
     res.render('im')
 };
