@@ -4,23 +4,23 @@
     var util = require('./../libs/byte.js')
 var config = {
     /***
-     * ÏµÍ³ÐÅÏ¢:ÏµÍ³Ãû³Æ\°æ±¾¡¢¿ª·¢Õß¡¢¿ª·¢ÕßÓÊÏäµÈÐÅÏ¢
+     * ÏµÍ³ï¿½ï¿½Ï¢:ÏµÍ³ï¿½ï¿½ï¿½\ï¿½æ±¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
      */
     app: {
         name:'my koa',
         version:'1.0.0',
         author:'Bytesu',
         email:'byte_su@163.com',
-        company:'3W'
+            company:'3W'
     },
     cookie:{
       secret:util.randomStr(10)
     },
     path: {
-        _static: ["app", ".tmp",'labs','node_modules','express']//¾²Ì¬ÎÄ¼þÂ·¾¶
+        _static: ["app", ".tmp",'labs','node_modules','express','libs']//ï¿½ï¿½Ì¬ï¿½Ä¼ï¿½Â·ï¿½ï¿½
     },
     mongodb:{
-        host:'101.200.193.213',
+        host:'localhost',
         port:'27017',
         db:'wsx'
         /*user:'bytedb',

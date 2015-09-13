@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>fir.im</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <style type="text/css">
+        html, body{height: 100%; padding: 0; margin: 0; }
+        body{ background-color: #F8BA0B; font-size: 18px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+        .article{ width: 480px; max-width: 80%; margin: 80px auto 0; line-height: 1.4; }
+        a{ text-decoration: none; color: #fff; opacity: 1; }
+    </style>
+</head>
+<body>
+
+<div class="article" id="zh" style="display:none;">
+    <h1>通知</h1>
+    <p>fir.im 接到通知，网站可能存在违反法律规定的信息(应用)，正在进行自查。</p>
+    <p>fir.im 感谢你的理解。</p>
+    <p>紧急问题，请联系 <a href="mailto:help@fir.im">help@fir.im</a></p>
+    <p>--</p>
+    <p>fir.im 团队</p>
+    <p>2015-08-28</p>
+</div>
+
+<div class="article" id="en" style="display:none;">
+    <h1>Emergency Notice</h1>
+    <p>fir.im has been blocked temporarily. Right now we are carrying out an emergency inspection. Our team is working hard on solving the problem. </p>
+    <p>We will update you as soon as the service and the website are back.</p>
+    <p>Thanks for your understanding.</p>
+    <p>For any emergency, please contact <a href="mailto:help@fir.im">help@fir.im</a></p>
+    <p>--</p>
+    <p>fir.im Team</p>
+    <p>August 28, 2015</p>
+</div>
+
+
+<script type="text/javascript">
+        var isZh = /^zh/.test(navigator.language);
+    if(isZh){
+        document.getElementById('zh').style.display = 'block';
+    }else{
+        document.getElementById('en').style.display = 'block';
+    }
+</script>
+</body>
+</html>
