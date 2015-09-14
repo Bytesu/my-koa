@@ -1,0 +1,19 @@
+{
+  "name": "y",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Bytesu/my-koa",
+  "authors": [
+    "suweiming <byte_su@163.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
