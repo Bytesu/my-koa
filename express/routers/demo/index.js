@@ -10,9 +10,9 @@ router2.get('/', function (req, res, next) {
     res.send('test ' +'----------------');
 });*/
 router.get('/',D.index);
-router.get('/test',D.test);
-router.get('/blog',D.blog);
-router.get('/im',D.im);
+//router.get('/test',D.test);
+//router.get('/blog',D.blog);
+//router.get('/im',D.im);
 router.all('/wx/',function(req,res,next){
         console.log(req.path);
         next();

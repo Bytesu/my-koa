@@ -1,209 +1,92 @@
-{"level":"info","message":"","timestamp":"2015-07-17T06:49:16.248Z"}
-{"level":"info","message":"","timestamp":"2015-07-17T06:49:18.394Z"}
-{"level":"info","message":"","timestamp":"2015-07-17T06:52:05.693Z"}
-{"level":"info","message":"","timestamp":"2015-07-17T06:53:27.186Z"}
-{"level":"info","message":"","timestamp":"2015-07-17T06:53:30.492Z"}
-{"level":"info","message":"","timestamp":"2015-07-17T06:56:14.285Z"}
-{"level":"info","message":"","timestamp":"2015-07-17T07:22:50.023Z"}
-{"level":"info","message":"","timestamp":"2015-07-17T07:27:33.524Z"}
-{"level":"info","message":"","timestamp":"2015-07-17T07:29:23.957Z"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17T07:30:52.489Z"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17T07:30:56.135Z"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17T07:30:56.911Z"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17T07:31:43.840Z"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17T07:33:45.394Z"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17T07:33:46.044Z"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17T07:33:47.650Z"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17T07:33:49.172Z"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17T07:34:38.255Z"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17T07:35:26.750Z"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17T07:35:27.515Z"}
-{"level":"info","message":"Hello again distributed logs","timestamp":1437118537354}
-{"level":"info","message":"Hello again distributed logs","timestamp":1437118540206}
-{"level":"info","message":"Hello again distributed logs","timestamp":1437118543143}
-{"level":"info","message":"Hello again distributed logs","timestamp":1437118544774}
-{"level":"info","message":"Hello again distributed logs","timestamp":1437118545538}
-{"level":"info","message":"Hello again distributed logs","timestamp":1437118586222}
-{"level":"info","message":"Hello again distributed logs","timestamp":1437118590211}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17T07:36:37.205Z"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17T07:38:16.055Z"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17T07:38:18.400Z"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"Friday, July 17th 2015, 3:38:19 pm"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"Friday, July 17th 2015, 3:38:24 pm"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"Friday, July 2015, 3:38:27 pm"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"Friday, July 2015, 3:38:30 pm"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"Friday, July 2015, 3:38:33 pm"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"Friday, 2015-07-17, 3:38:41 pm"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"Friday, 2015-07-17, 3:38:44 pm"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"Friday, 2015-07-Fr, 3:38:45 pm"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"Friday, 2015-07-Fr, 3:38:48 pm"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-Fr, 3:38:49 pm"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-Fr 3:38:51 pm"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-Fr 3:38:54 pm"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-Fr 3:38:55 pm"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17 03:39:10 pm"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17 03:39:11 pm"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17 03:39:12 pm"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17 03:39:39 pm"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17 03:39:41 pm"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17 03:39:42:421 pm"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17 03:39:49:334 pm"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17 03:39:50:092 pm"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17 03:40:16:044 pm-0.4791268380358815"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17 03:40:17:724 pm-0.6057777474634349"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17 03:40:18:446 pm-0.7693876719567925"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17 03:41:00:023 pm-0.14486091677099466"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17 03:41:19:774 pm-0.8591709835454822"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17 03:41:22:514 pm-0.8942705548834056"}
-{"level":"info","message":"","timestamp":"2015-07-17 03:41:29:961 pm-0.3390320441685617"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17 03:41:33:024 pm-0.5030871334020048"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17 03:41:34:121 pm-0.7065379635896534"}
-{"level":"info","message":"","timestamp":"2015-07-17 03:41:40:759 pm-0.2475677439942956"}
-{"level":"info","message":"","timestamp":"2015-07-17 03:41:43:171 pm-0.9952254805248231"}
-{"level":"info","message":"","timestamp":"2015-07-17 03:41:43:657 pm-0.83308209432289"}
-{"level":"info","message":"","timestamp":"2015-07-17 03:41:43:919 pm-0.7075801810715348"}
-{"level":"info","message":"","timestamp":"2015-07-17 03:41:44:155 pm-0.6042245202697814"}
-{"level":"info","message":"","timestamp":"2015-07-17 03:41:44:249 pm-0.06419802387245"}
-{"level":"info","message":"","timestamp":"2015-07-17 03:41:44:496 pm-0.18042219034396112"}
-{"level":"info","message":"","timestamp":"2015-07-17 03:41:44:535 pm-0.8311341304797679"}
-{"level":"info","message":"","timestamp":"2015-07-17 03:41:44:701 pm-0.30672555160708725"}
-{"level":"info","message":"","timestamp":"2015-07-17 03:41:44:938 pm-0.5062999681103975"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17 03:41:51:504 pm-0.9838079030159861"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17 03:42:07:032 pm-0.8665967267006636"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17 03:42:11:401 pm-0.643299997318536"}
-{"level":"info","message":"------aqR2xiUNCiifKufIshJH8mtrR9BY-----","timestamp":"2015-07-17 03:42:14:308 pm-0.9458311328198761"}
-{"level":"info","message":"------aqR2xiUNCiifKufIshJH8mtrR9BY-----","timestamp":"2015-07-17 03:42:15:038 pm-0.43777693435549736"}
-{"level":"info","message":"------aqR2xiUNCiifKufIshJH8mtrR9BY-----","timestamp":"2015-07-17 03:42:15:257 pm-0.5020018697250634"}
-{"level":"info","message":"------aqR2xiUNCiifKufIshJH8mtrR9BY-----","timestamp":"2015-07-17 03:42:15:521 pm-0.14799229055643082"}
-{"level":"info","message":"------aqR2xiUNCiifKufIshJH8mtrR9BY-----","timestamp":"2015-07-17 03:42:15:624 pm-0.17369840829633176"}
-{"level":"info","message":"------aqR2xiUNCiifKufIshJH8mtrR9BY-----","timestamp":"2015-07-17 03:42:15:877 pm-0.8931851906236261"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17 03:42:17:221 pm-0.24123017024248838"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2015-07-17 03:42:18:620 pm-0.4274423005990684"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 03:44:07:076 pm-0.9111201118212193"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 03:44:11:230 pm-0.6904401234351099"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 03:44:12:001 pm-0.11947180377319455"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 03:44:30:457 pm-0.8386389689985663"}
-{"level":"info","message":"------aqR2xiUNCiifKufIshJH8mtrR9BY-----","timestamp":"2015-07-17 03:44:36:002 pm-0.5318397136870772"}
-{"level":"info","message":"------aqR2xiUNCiifKufIshJH8mtrR9BY-----","timestamp":"2015-07-17 03:44:37:476 pm-0.3603908084332943"}
-{"level":"info","message":"------aqR2xiUNCiifKufIshJH8mtrR9BY-----","timestamp":"2015-07-17 03:45:11:120 pm-0.4100407026708126"}
-{"level":"info","message":"------aqR2xiUNCiifKufIshJH8mtrR9BY-----","timestamp":"2015-07-17 03:46:07:222 pm-0.6550477470736951"}
-{"level":"info","message":"------aqR2xiUNCiifKufIshJH8mtrR9BY-----","timestamp":"2015-07-17 04:11:38:651 pm-0.7434904424007982"}
-{"level":"info","message":"------aqR2xiUNCiifKufIshJH8mtrR9BY-----","timestamp":"2015-07-17 04:11:41:266 pm-0.8748545374255627"}
-{"level":"info","message":"------aqR2xiUNCiifKufIshJH8mtrR9BY-----","timestamp":"2015-07-17 04:11:41:839 pm-0.29405881627462804"}
-{"level":"info","message":"------aqR2xiUNCiifKufIshJH8mtrR9BY-----","timestamp":"2015-07-17 04:11:42:041 pm-0.4583931299857795"}
-{"level":"info","message":"------aqR2xiUNCiifKufIshJH8mtrR9BY-----","timestamp":"2015-07-17 04:11:42:329 pm-0.2293487535789609"}
-{"level":"info","message":"------aqR2xiUNCiifKufIshJH8mtrR9BY-----","timestamp":"2015-07-17 04:11:42:336 pm-0.8503171275369823"}
-{"level":"info","message":"------aqR2xiUNCiifKufIshJH8mtrR9BY-----","timestamp":"2015-07-17 04:11:42:551 pm-0.8019478879868984"}
-{"level":"info","message":"------aqR2xiUNCiifKufIshJH8mtrR9BY-----","timestamp":"2015-07-17 04:11:42:812 pm-0.10347257764078677"}
-{"level":"info","message":"------aqR2xiUNCiifKufIshJH8mtrR9BY-----","timestamp":"2015-07-17 04:11:42:843 pm-0.9281478766351938"}
-{"level":"info","message":"------aqR2xiUNCiifKufIshJH8mtrR9BY-----","timestamp":"2015-07-17 04:11:43:101 pm-0.04731783177703619"}
-{"level":"info","message":"------aqR2xiUNCiifKufIshJH8mtrR9BY-----","timestamp":"2015-07-17 04:11:43:245 pm-0.8915566320065409"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 04:12:22:960 pm-0.6939534177072346"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 04:15:14:329 pm-0.6179651310667396"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 04:18:56:931 pm-0.25119646615348756"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 04:29:49:907 pm-0.6805340948048979"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 04:37:36:843 pm-0.6759708411991596"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 05:51:20:064 pm-0.5979859244544059"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 06:07:01:873 pm-0.27743615536019206"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 06:17:54:514 pm-0.6204394062515348"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 06:34:55:186 pm-0.8702605252619833"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 06:49:56:916 pm-0.28188821393996477"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 07:27:22:648 pm-0.7540504848584533"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 07:36:19:049 pm-0.7335915153380483"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 07:36:32:644 pm-0.6537132996600121"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 07:38:28:775 pm-0.6270043111871928"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 07:38:47:163 pm-0.48589998320676386"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 07:38:59:685 pm-0.9459284052718431"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 07:39:21:723 pm-0.9863759523723274"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 07:39:23:670 pm-0.41791713587008417"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 07:39:26:739 pm-0.845268840668723"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 07:39:29:351 pm-0.5945255898404866"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 07:39:38:894 pm-0.9120920309796929"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 07:52:06:228 pm-0.4680776596069336"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 07:55:43:766 pm-0.6195657830685377"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 07:56:52:211 pm-0.3017277878243476"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 07:57:14:368 pm-0.10832954687066376"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 07:57:36:555 pm-0.24959483509883285"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 07:57:56:994 pm-0.669199128402397"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 07:58:35:223 pm-0.5729630694258958"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 07:59:00:531 pm-0.18576328875496984"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 07:59:48:278 pm-0.7358330981805921"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:00:14:895 pm-0.529466831125319"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:02:30:814 pm-0.23971723159775138"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:03:27:509 pm-0.5441731384489685"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:03:52:677 pm-0.6597066284157336"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:04:58:680 pm-0.5815014278050512"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:05:19:245 pm-0.29768420034088194"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:06:24:099 pm-0.9933859575539827"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:09:15:962 pm-0.21206004777923226"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:09:31:442 pm-0.2901283495593816"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:09:36:527 pm-0.9499808892142028"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:09:40:465 pm-0.07238813163712621"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:09:42:847 pm-0.3074198074173182"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:09:49:994 pm-0.41347375325858593"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:09:52:029 pm-0.06295643257908523"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:14:35:045 pm-0.272975959116593"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:18:21:196 pm-0.02028867951594293"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:20:31:510 pm-0.019807911477982998"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:22:27:862 pm-0.028683164389804006"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:23:50:803 pm-0.37749713147059083"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:24:07:055 pm-0.5090047870762646"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:25:55:803 pm-0.36708686128258705"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:27:51:719 pm-0.3847383111715317"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:30:25:386 pm-0.6464823258575052"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:33:10:963 pm-0.560558222932741"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:34:08:894 pm-0.46306295064277947"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:36:35:087 pm-0.20219789166003466"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:39:08:315 pm-0.9825033606030047"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:40:21:405 pm-0.3043340374715626"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:41:10:736 pm-0.8680614859331399"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:43:12:951 pm-0.9259926252998412"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:43:32:623 pm-0.6198688342701644"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:44:05:330 pm-0.5195916469674557"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:45:36:066 pm-0.07724207895807922"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:46:51:065 pm-0.35733191412873566"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:49:24:692 pm-0.625482464209199"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:53:58:842 pm-0.4362984267063439"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 08:57:06:917 pm-0.15284293214790523"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 09:05:28:774 pm-0.5738076604902744"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 09:06:52:085 pm-0.6159387757070363"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 09:06:52:903 pm-0.14068819140084088"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 09:16:25:043 pm-0.9429015286732465"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 09:17:29:533 pm-0.8952317740768194"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 09:34:15:528 pm-0.09881301037967205"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 09:35:04:992 pm-0.8951592333614826"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 09:37:01:731 pm-0.9730370612815022"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 09:39:23:231 pm-0.9324266251642257"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 09:40:07:144 pm-0.6107566598802805"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 09:40:59:360 pm-0.3091380698606372"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 09:41:53:985 pm-0.2632754002697766"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 09:42:47:491 pm-0.28606523806229234"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 09:43:11:617 pm-0.19914734060876071"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 09:43:41:348 pm-0.5272229493129998"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 09:44:00:699 pm-0.7817128412425518"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 09:45:30:015 pm-0.9487405924592167"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 09:45:43:820 pm-0.8452014005742967"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 09:46:11:952 pm-0.7113951237406582"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-07-17 10:27:50:257 pm-0.9784689527004957"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-01 08:45:46:517 am-0.8291255759540945"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-01 08:45:47:908 am-0.8727477290667593"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-01 08:45:49:095 am-0.41963581019081175"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-01 08:45:50:100 am-0.9188694413751364"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-01 08:45:51:252 am-0.8429882992058992"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-01 08:45:52:382 am-0.7067028158344328"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-01 08:45:53:338 am-0.7186553857754916"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-01 08:46:22:196 am-0.06368634290993214"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-01 08:47:18:967 am-0.9162703803740442"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-01 08:48:15:627 am-0.8795653032138944"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-01 09:09:09:299 am-0.7178506413474679"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-01 09:09:10:698 am-0.5733700462151319"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-01 09:09:11:892 am-0.454098159680143"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-01 09:09:13:063 am-0.41671960637904704"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-01 09:09:14:184 am-0.7565401766914874"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-01 09:09:15:370 am-0.4404777092859149"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-01 09:10:09:535 am-0.7103350597899407"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-01 09:10:54:499 am-0.44678955618292093"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-01 09:11:59:425 am-0.08394649648107588"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-01 09:12:04:757 am-0.5326186371967196"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-01 09:12:09:428 am-0.4337629263754934"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-01 09:16:23:802 am-0.37672564084641635"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-13 11:34:53:525 pm-0.9958221227861941"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-13 11:35:13:108 pm-0.3630507236812264"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-13 11:35:19:459 pm-0.35883876867592335"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-13 11:35:32:449 pm-0.27419718028977513"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-13 11:35:46:576 pm-0.4625340027268976"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-13 11:36:10:849 pm-0.6023090484086424"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-13 11:36:33:204 pm-0.07014477555640042"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-13 11:37:44:104 pm-0.06350856809876859"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-13 11:38:42:190 pm-0.9648781863506883"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-13 11:38:48:362 pm-0.47616562037728727"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-13 11:38:57:229 pm-0.5790992768015712"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-13 11:39:05:197 pm-0.18867127923294902"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-13 11:39:28:914 pm-0.25407450925558805"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-13 11:42:14:952 pm-0.31322637014091015"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-13 11:42:27:430 pm-0.7100601084530354"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-13 11:43:24:287 pm-0.7165272713173181"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-13 11:51:30:966 pm-0.9946535367053002"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-13 11:58:05:738 pm-0.706396303139627"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:05:40:808 am-0.09715908206999302"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:05:42:163 am-0.09269099961966276"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:05:43:275 am-0.5509803930763155"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:05:44:651 am-0.7218737383373082"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:05:45:710 am-0.23662564251571894"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:05:46:795 am-0.9619293694850057"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:05:48:070 am-0.207950308220461"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:05:49:316 am-0.2564157673623413"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:05:50:267 am-0.5484132468700409"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:05:51:224 am-0.8492548584472388"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:05:52:347 am-0.892075032228604"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:05:53:426 am-0.11811528820544481"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:05:54:527 am-0.8446490142960101"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:05:55:542 am-0.35795752448029816"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:05:56:658 am-0.6340474376920611"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:05:57:754 am-0.3934810785576701"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:05:58:733 am-0.846992450999096"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:05:59:826 am-0.04717594641260803"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:06:00:876 am-0.813467881642282"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:06:02:722 am-0.17764551029540598"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:06:03:725 am-0.24710828019306064"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:06:04:889 am-0.41359767923131585"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:06:05:972 am-0.24197126156650484"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:06:07:218 am-0.9332729130983353"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:06:08:425 am-0.8000176635105163"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:06:09:613 am-0.10832870309241116"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:06:10:873 am-0.6543501070700586"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:06:12:071 am-0.1757377777248621"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:06:13:161 am-0.6890921578742564"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:06:15:353 am-0.01936675072647631"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:06:16:495 am-0.9159953023772687"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:06:17:599 am-0.47929830430075526"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:06:18:609 am-0.09189478727057576"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:06:19:534 am-0.2744079341646284"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:06:20:627 am-0.07322057755663991"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:06:21:734 am-0.9809111102949828"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:06:22:927 am-0.765086657134816"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:06:23:934 am-0.6934240367263556"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:09:00:702 am-0.9673022646456957"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:09:01:744 am-0.260635738261044"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 10:08:32:090 am-0.4405033406801522"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 10:08:54:472 am-0.24568793107755482"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 10:09:23:687 am-0.154951166594401"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 10:10:52:055 am-0.6645229919813573"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 10:11:14:628 am-0.09080803231336176"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 10:11:27:697 am-0.7575379204936326"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 10:12:10:533 am-0.07359668985009193"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 10:12:50:260 am-0.40820030262693763"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 10:12:55:454 am-0.770497530233115"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 10:15:40:766 am-0.6258343192748725"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 11:05:48:895 am-0.2215356333181262"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 11:06:10:320 am-0.7910906423348933"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 11:06:18:875 am-0.7184206582605839"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 11:06:31:964 am-0.06064580753445625"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 11:06:37:927 am-0.8989905302878469"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 11:06:52:094 am-0.20682491967454553"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 11:07:01:684 am-0.5368690053001046"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 11:07:38:140 am-0.8927052905783057"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 11:07:48:000 am-0.4995158649981022"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 11:19:36:176 am-0.908252788707614"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:03:11:888 pm-0.1174625582061708"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:03:41:796 pm-0.14512443798594177"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:04:32:997 pm-0.8975873365998268"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 12:05:12:717 pm-0.3696793920826167"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 01:36:16:459 pm-0.028477451065555215"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 01:36:45:704 pm-0.9099136397708207"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 01:38:31:595 pm-0.6623780450318009"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 01:38:49:654 pm-0.753219804726541"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 01:39:47:453 pm-0.0021839088294655085"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 01:39:52:112 pm-0.3519649845547974"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 01:40:12:057 pm-0.03917446592822671"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 01:40:31:932 pm-0.20301442337222397"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 01:41:16:977 pm-0.08973580249585211"}
+{"level":"info","message":"Hello distributed log files!","timestamp":"2015-09-14 01:41:24:172 pm-0.624898562207818"}

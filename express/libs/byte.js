@@ -24,7 +24,7 @@ byte.prototype.randomStr = function (len) {
 };
 byte.prototype.obj2Arr = function () {
     var _ = require('underscore');
-    console.log('----------------' + (  _.values({one: 3, two: 5, three: 1}).sort().length));
+    //console.log('----------------' + (  _.values({one: 3, two: 5, three: 1}).sort().length));
 };
 
 

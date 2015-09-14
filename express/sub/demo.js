@@ -16,17 +16,16 @@ var demo = express();
 [].map.call(config.path._static, function (val) {
     demo.use(express.static(val));
 });
-demo.set('views', path.join(__dirname, './../views'));
+demo.set('views', path.join(__dirname, './../views/d'));
 demo.set('view engine', 'html');
 demo.engine('html', require('ejs-mate'));
-demo.locals._layoutFile = 'tmpl.html';
-//demo.set('trust proxy', 1)
+demo.locals._layoutFile = 'tmplBackend.html';
 //中间件
-demo.use(require('./../middleware/authentication/')); //权限验证中间件
+//demo.use(require('./../middleware/authentication/')); //权限验证中间件
 demo.use(require('./../middleware/cookie/')); //cookie
 demo.use(require('./../middleware/body-parser/')); //body-parser
 demo.use(xmlBodyParser());
-//demo.use(require('./../middleware/csrf/'));
+demo.use(require('./../middleware/csrf/'));
 //demo.use(require('./../middleware/cookie-session/'));
 demo.all('*', require('./../middleware/compression/')); //gzip压缩模块
 router.use(require('./../routers/demo/index'));//路由器

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>百度地图设置地图允许的最小/大级别</title>
+    <style type="text/css">
+        html {height:100%}
+        body {height:100%; margin:0px; padding:0px;}
+        #container {height:500px;}
+        #nav {width:100%;height:50px;line-height:50px;background:#222;opacity:0.8;}
+        #nav ul {list-style:none;overflow:hidden;margin:0;}
+        #nav ul li {float:left;}
+        #nav ul li a {color:#FFF;text-decoration:none;float:left;padding:0 20px;}
+    </style>
+    <script src="http://api.map.baidu.com/api?v=1.5&ak=A7a3c1b7ba89e10564d2ea37dd230acf" type="text/javascript"></script>
+</head>
+<body>
+<div id="nav">
+    <ul>
+        <li><a href="javascript:void(0)">首页</a></li>
+        <li><a href="javascript:void(0)">煤矿</a></li>
+        <li><a href="javascript:void(0)">煤场</a></li>
+        <li><a href="javascript:void(0)">洗煤厂</a></li>
+        <li><a href="javascript:void(0)">车辆</a></li>
+    </ul>
+</div>
+<div id="container"></div>
+<div id="results"></div>
+<div id="log"></div>
+<script type="text/javascript">
+    var map = new BMap.Map("container",{
+        minZoom: 4,
+        maxZoom: 8
+    });
+    map.centerAndZoom(new BMap.Point(116.4035,39.915),15);  //初始化时，即可设置中心点和地图缩放级别。
+    map.enableScrollWheelZoom(true);
+
+</script>
+</body>
+</html>
